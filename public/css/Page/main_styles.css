@@ -1000,7 +1000,7 @@ section
 .services
 {
 	width: 100%;
-	padding-top: 130px;
+	padding-top: 30px;
 	padding-bottom: 184px;
 }
 .section_title h1
@@ -1481,8 +1481,9 @@ section
 
 .footer
 {
-	padding-top: 99px;
-	padding-bottom: 82px;
+	background: rgba(27, 11, 51, 0.92);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .footer_logo
 {
@@ -1500,7 +1501,7 @@ section
 }
 .footer_social
 {
-	margin-top: 27px;
+	margin-top: 0px;
 }
 .footer_social ul
 {
@@ -1530,7 +1531,7 @@ section
 	font-size: 16px;
 	font-weight: 500;
 	color: #cacaca;
-	margin-top: 65px;
+	margin-top: 15px;
 }
 .footer_cr_2
 {
