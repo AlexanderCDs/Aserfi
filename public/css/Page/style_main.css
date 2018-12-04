@@ -1,0 +1,54 @@
+/**
+** @author Alexander CD
+** @date 03/12/2018
+**/
+
+.background-nav{
+	background-color: rgb(0, 72, 119, 0.3) !important;
+}
+
+.background-service{
+	background-color: rgb(0, 72, 119);
+}
+
+.color-nav-text{
+	color: #FFF !important;
+}
+
+.center-text-carousel{
+	margin-bottom: 15% !important;
+}
+
+.col-without-padding{
+	padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.pull-right-nav{
+	flex-grow: 0 !important;
+}
+
+.nav-item-margin{
+	margin-left: 50px;
+}
+
+@media (min-width: 868px){
+	.carousel-item{
+   		height: calc(100vh - 8vw);
+	} 
+	.carousel-item img{
+    	height: calc(100vh - 8vw);
+	}
+}
+
+@media (min-width: 1100px){
+	.carousel-item{
+   		height: calc(115vh - 8vw);
+	} 
+	.carousel-item img{
+    	height: calc(115vh - 8vw);
+	}
+}
+
+
+/** Servicios **/
