@@ -52,3 +52,198 @@
 
 
 /** Servicios **/
+.margin-servicos{
+	margin 0px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/** Beneficios **/
+.arrow-lg {
+     width: 0; 
+     height: 0; 
+     border-left: 100px solid #152C50;
+     border-top: 50px solid transparent;
+     border-bottom: 50px solid transparent; 
+}
+
+.arrow-md {
+     width: 0; 
+     height: 0; 
+     border-left: 75px solid #152C50;
+     border-top: 37px solid transparent;
+     border-bottom: 37px solid transparent;
+}
+
+.arrow-sm {
+     width: 0; 
+     height: 0; 
+     border-left: 50px solid #152C50;
+     border-top: 25px solid transparent;
+     border-bottom: 25px solid transparent; 
+}
+
+.rectangle-md {
+	background-color: #152C50;
+	color: #FFF;
+	width: 80%;
+	height: 40px;
+	margin-top: 15px;
+}
+
+.arrow-center {
+	margin-left: 25%;
+}
+
+@media (min-width: 430px){
+	.arrow-center {
+		margin-left: 0%;
+	}
+
+	.margin-form-contacto {
+		margin 0px;
+		margin-top: 0%;
+		margin-bottom: 1%;
+	}
+
+	.margin-contacto {
+		margin-top: 2%;
+	}
+}
+
+
+@media (min-width: 868px){
+	.arrow-center {
+		margin-left: 150px;
+	}
+
+	.margin-form-contacto {
+		margin 0px;
+		margin-top: 7%;
+		margin-bottom: 7%;
+	}
+
+	.margin-contacto {
+		margin-top: 14%;
+	}
+
+	@-moz-keyframes arrow-trans {
+  		from {
+    		margin-right:100px;
+  		} 
+  		to {
+    		margin-right:60%;
+  		}
+	}
+
+	@-webkit-keyframes arrow-trans {
+  		from {
+    		margin-right:100px;
+  		}
+  		to {
+    		margin-right:60%;
+  		}
+	}
+
+	@keyframes arrow-trans {
+  		from {
+    		margin-right:100px;
+  		}
+  		to {
+    		margin-right:60%;    	
+  		}
+	}	
+}
+
+@media (min-width: 1100px){
+	.arrow-center {
+		margin-bottom: 10px;
+		margin-left: 300px;
+	}
+
+	.margin-form-contacto {
+		margin 0px;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+	.margin-contacto {
+		margin-top: 14%;
+	}
+
+	@-moz-keyframes arrow-trans {
+  		from {
+    		margin-right:100px;
+  		} 
+  		to {
+    		margin-right:70%;
+  		}
+	}
+
+	@-webkit-keyframes arrow-trans {
+  		from {
+    		margin-right:100px;
+  		}
+  		to {
+    		margin-right:70%;
+  		}
+	}
+
+	@keyframes arrow-trans {
+  		from {
+    		margin-right:100px;
+  		}
+  		to {
+    		margin-right:70%;    	
+  		}
+	}
+}
+
+.arrow-trans {
+  -moz-animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -moz-animation-name: arrow-trans;
+  -webkit-animation-name: arrow-trans;
+  animation-name: arrow-trans;
+  -moz-animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+
+/** Contacto **/
+
+.color-item-text{
+	background-color: #004877;
+	width: 40px;
+	height: 40px;
+}
+
+.btn-aserfi {
+	background-color: #004877 !important;
+    border-color: #004877 !important;
+}
+
+.btn-round{
+	border-radius: 50%;
+}
+
+.bg-contacto{
+	 background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+
+  /* Half height */
+  height: 50%;
+}
+
+/** Footer **/
+.bg-footer {
+	background-color: #21202D;
+	padding 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;	
+	color: #FFF;
+}

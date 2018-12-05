@@ -39,7 +39,7 @@
 	        			<a class="nav-link color-nav-text" href="#inicio">Inicio</a>
     	  			</li>
      			 	<li class="nav-item">
-        				<a class="nav-link color-nav-text" href="#quienessomos">Quíenes somos</a>
+        				<a class="nav-link color-nav-text" href="#quienessomos">Quiénes somos</a>
       				</li>
 	      			<li class="nav-item">
     	    			<a class="nav-link color-nav-text" href="#servicios">Servicios</a>
@@ -124,10 +124,18 @@
 	<!-- Quienes Somos -->
 	<div id="quienessomos">
 		<div class="container">
-			<div class="col-lg-12 ">
-				<h1 class="text-center">¿Quíenes Somos?</h1>
-				<div class="col-lg-7 col-lg-offset-2">
-					Somos una firma de profecionales especializados en el sector financiero, nuestro momdelo de negocios se basa en capacitar la competecia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posible.
+			<div class="col-lg-12 margin-servicos">
+				<h1 class="text-center">¿Quiénes Somos?</h1>
+					<div class="row">
+						<div class="col-lg-2 "></div>
+						<div class="col-lg-8 ">
+							Somos una firma de profecionales especializados en el sector financiero, nuestro momdelo de negocios se basa en capacitar la competecia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posible.
+						</div>
+						<div class="col-lg-2 "></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">Graficas</div>
+					<div class="col-sm-6">Imagen</div>
 				</div>
 			</div>
 		</div>
@@ -136,9 +144,9 @@
 	<!-- Servicios -->
 	<div id="servicios" class="background-service">
 		<div class="container color-nav-text">
-			<div class="col-lg-12">
+			<div class="col-lg-12 ">
 				<h1>Servicios</h1>
-				<div class="row">
+				<div class="row margin-servicos">
 					<div class="col-sm-6">
 						<h3>Financiamiento</h3>
 						<p>Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
@@ -158,52 +166,134 @@
 
 	<!-- Beneficios -->
 	<div id="beneficios">
-		<div class="container">
+		<div class="">
 			<div class="col-lg-12 ">
 				<h1 class="text-center">Beneficios</h1>
-				<p>
+				<p class="text-center">
 					Financiamiento Inversiones Patrimonio
 				</p>
-				<div class="arrowed">
-					<div class="arrow-1">
-						AHORROS EN TIEMPO DE RESPUESTA
+				<div class="row arrow-trans">
+					<div class="rectangle-md">
+						<div class="col-lg-12 arrow-center">
+							AHORROS EN TIEMPO DE RESPUESTA
+						</div>
 					</div>
+					<div class="arrow-md" style="border-left: 50px solid #152C50 !important"></div>
 				</div>
-				<div class="arrowed">
-					<div class="arrow-2">
-						ELABORACIÓN DE PROYECTOS A LA MEDIDA
+				<div class="row arrow-trans">
+					<div class="rectangle-md" style="background-color: #284778 !important; width: 60% !important;">
+						<div class="col-lg-12 arrow-center">
+							ELABORACIÓN DE PROYECTOS A LA MEDIDA
+						</div>
 					</div>
+					<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
 				</div>
-				<div class="arrowed">
-					<div class="arrow-3">
-						SELECCIÓN DE INSTITUCIÓN ESPECIALIZADA
+				<div class="row arrow-trans">
+					<div class="rectangle-md" style="background-color: #284778 !important; width: 70% !important;">
+						<div class="col-lg-12 arrow-center">
+							SELECCIÓN DE INSTITUCIÓN ESPECIALIZADA
+						</div>
 					</div>
+					<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
 				</div>
-				<div class="arrowed">
-					<div class="arrow-4">
-						MEJORA DE TÉRMINOS Y CONDICIONES
+				<div class="row arrow-trans">
+					<div class="rectangle-md" style="background-color: #4275B1 !important; width: 85% !important;">
+						<div class="col-lg-12 arrow-center">
+							MEJORA DE TÉRMINOS Y CONDICIONES
+						</div>
 					</div>
+					<div class="arrow-md" style="border-left: 50px solid #4275B1 !important"></div>
 				</div>
-				<div class="arrowed">
-					<div class="arrow-5">
-						MITIGACIÓN DE RIESGOS
+				<div class="row arrow-trans">
+					<div class="rectangle-md" style="background-color: #4E74B1 !important; width: 80% !important;">
+						<div class="col-lg-12 arrow-center">
+							MITIGACIÓN DE RIESGOS
+						</div>
 					</div>
+					<div class="arrow-md" style="border-left: 50px solid #4E74B1 !important"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Contacto -->
-	<div id="contacto">
+	<div id="ubicanos">
 		<div class="container">
 			<div class="col-lg-12">
-				<h1>Contacto</h1>
+				<h1>Maps</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contacto -->
+	<div id="contacto" class="bg-contacto">
+		<div class="container">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-5 margin-form-contacto">
+						<form>
+							<h1>Contacto</h1>
+  							<div class="form-group">
+  								<input type="text" class="form-control" id="cNombre" name="cNombre" placeholder="Nombre">
+  							</div>
+  							<div class="form-group">
+    							<input type="email" class="form-control" id="cEmail" name="cEmail" placeholder="Correo">
+  							</div>
+  							<div class="form-group">
+    							<input type="text" class="form-control" id="cAsunto" name="cAsunto" placeholder="Asunto">
+  							</div>
+  							<div class="form-group">
+  								<textarea class="form-control" id="cMensaje" name="cMensaje" placeholder="Mensaje" rows="3"></textarea>
+  							</div>
+  							<div class="">
+  								<a href="#" class="btn btn-success btn-aserfi">
+  									<i class="fas fa-check"></i> Enviar
+  								</a>
+  							</div>
+  						</form>
+					</div>
+					<div class="col-lg-5 margin-form-contacto">
+						<ul class="margin-contacto" >
+    	  					<a href="#" class="btn btn-success btn-aserfi btn-round">
+    	  						<i class="fas fa-map-marker-alt"></i>
+    	  					</a>
+        					<span>Ubicación</span>
+        					<ol>
+        						Calle 16 No. 61A x 3 y 5 C.P. 97139 San Antonio Cinta. Mérida, Yucatán.
+        					</ol>
+      						
+      						<a href="#" class="btn btn-success btn-aserfi btn-round">
+    	  						<i class="fab fa-whatsapp"></i> 
+    	  					</a>
+        					<span>Teléfono</span>
+        					
+        					<ol>
+        						(999) 422 5312
+        					</ol>
+        					<ol>
+        						(999) 322 8638
+        					</ol>
+
+      						<a href="#" class="btn btn-success btn-aserfi btn-round">
+    	  						<i class="fas fa-envelope"></i>
+    	  					</a>
+        					<span>Correo</span>
+        					
+        					<ol>
+        						fgonzales@aserfi.mx
+        					</ol>
+    	  				</ul>
+					</div>
+					<div class="col-lg-1"></div>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Footer -->
-	<div id="footer">
+	<div id="footer" class="bg-footer text-center">
+		Copyright &copy; <script>document.write(new Date().getFullYear());</script> ASERFI Todos los derechos reservados
 	</div>
 
 	<script src="{{asset('js/Page/jquery-3.2.1.min.js')}}"></script>
