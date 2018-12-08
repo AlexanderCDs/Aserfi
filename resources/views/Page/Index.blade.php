@@ -133,9 +133,38 @@
 						</div>
 						<div class="col-lg-2 "></div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6">Graficas</div>
-					<div class="col-sm-6">Imagen</div>
+				<div class="row margin-servicos">
+					<div class="col-sm-7">
+						<h4 class="text-center">TII PROMEDIO ANUALES 28 DÍAS</h4>
+						<div class="row">
+							<div class="col-lg-4">
+								<canvas id="doughnut-chart-1" width="50" height="50"></canvas>
+							</div>
+							<div class="col-lg-4">
+								<canvas id="doughnut-chart-2" width="50" height="50"></canvas>
+							</div>
+							<div class="col-lg-4">
+								<canvas id="doughnut-chart-3" width="50" height="50"></canvas>
+							</div>
+						</div>
+						<div class="row">	
+							<div class="col-lg-2">
+								
+							</div>						
+							<div class="col-lg-4">
+								<canvas id="doughnut-chart-4" width="50" height="50"></canvas>
+							</div>
+							<div class="col-lg-4">
+								<canvas id="doughnut-chart-5" width="50" height="50"></canvas>
+							</div>
+
+							<div class="col-lg-2">
+								
+							</div>	
+						</div>
+						
+					</div>
+					<div class="col-sm-2">Imagen</div>
 				</div>
 			</div>
 		</div>
@@ -169,48 +198,71 @@
 		<div class="">
 			<div class="col-lg-12 ">
 				<h1 class="text-center">Beneficios</h1>
-				<p class="text-center">
-					Financiamiento Inversiones Patrimonio
-				</p>
-				<div class="row arrow-trans">
-					<div class="rectangle-md">
-						<div class="col-lg-12 arrow-center">
-							AHORROS EN TIEMPO DE RESPUESTA
+
+					<ul class="nav nav-fill nav-tabs nav-beneficios" id="tabBeneficios" role="tablist">
+  						<li class="nav-item">
+  							<a class="nav-link active" id="financiamiento-tab" data-toggle="tab" href="#financiamiento" role="tab" aria-controls="financiamiento" aria-selected="true">Financiamiento</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" id="inversiones-tab" data-toggle="tab" href="#inversiones" role="tab" aria-controls="inversiones" aria-selected="true">Inversiones</a>
+  						</li>
+  						<li class="nav-item">
+  							<a class="nav-link" id="patrimonio-tab" data-toggle="tab" href="#patrimonio" role="tab" aria-controls="patrimonio" aria-selected="true">Patrimonio</a>
+  						</li>
+  					</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="financiamiento" role="tabpanel" aria-labelledby="financiamiento-tab">
+						
+						<div class="row arrow-trans">
+							<div class="rectangle-md">
+								<div class="col-lg-12 arrow-center">
+									AHORROS EN TIEMPO DE RESPUESTA
+								</div>
+							</div>
+							<div class="arrow-md" style="border-left: 50px solid #152C50 !important"></div>
 						</div>
-					</div>
-					<div class="arrow-md" style="border-left: 50px solid #152C50 !important"></div>
-				</div>
-				<div class="row arrow-trans">
-					<div class="rectangle-md" style="background-color: #284778 !important; width: 60% !important;">
-						<div class="col-lg-12 arrow-center">
-							ELABORACIÓN DE PROYECTOS A LA MEDIDA
+						<div class="row arrow-trans">
+							<div class="rectangle-md" style="background-color: #284778 !important; width: 55% !important;">
+								<div class="col-lg-12 arrow-center">
+									ELABORACIÓN DE PROYECTOS A LA MEDIDA
+								</div>
+							</div>
+							<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
 						</div>
-					</div>
-					<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
-				</div>
-				<div class="row arrow-trans">
-					<div class="rectangle-md" style="background-color: #284778 !important; width: 70% !important;">
-						<div class="col-lg-12 arrow-center">
-							SELECCIÓN DE INSTITUCIÓN ESPECIALIZADA
+						<div class="row arrow-trans">
+							<div class="rectangle-md" style="background-color: #284778 !important; width: 65% !important;">
+								<div class="col-lg-12 arrow-center">
+									SELECCIÓN DE INSTITUCIÓN ESPECIALIZADA
+									</div>
+								</div>
+							<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
 						</div>
-					</div>
-					<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
-				</div>
-				<div class="row arrow-trans">
-					<div class="rectangle-md" style="background-color: #4275B1 !important; width: 85% !important;">
-						<div class="col-lg-12 arrow-center">
-							MEJORA DE TÉRMINOS Y CONDICIONES
+						<div class="row arrow-trans">
+							<div class="rectangle-md" style="background-color: #4275B1 !important; width: 75% !important;">
+								<div class="col-lg-12 arrow-center">
+									MEJORA DE TÉRMINOS Y CONDICIONES
+								</div>
+							</div>
+							<div class="arrow-md" style="border-left: 50px solid #4275B1 !important"></div>
 						</div>
-					</div>
-					<div class="arrow-md" style="border-left: 50px solid #4275B1 !important"></div>
-				</div>
-				<div class="row arrow-trans">
-					<div class="rectangle-md" style="background-color: #4E74B1 !important; width: 80% !important;">
-						<div class="col-lg-12 arrow-center">
-							MITIGACIÓN DE RIESGOS
+						<div class="row arrow-trans">
+							<div class="rectangle-md" style="background-color: #4E74B1 !important; width: 70% !important;">
+								<div class="col-lg-12 arrow-center">
+									MITIGACIÓN DE RIESGOS
+								</div>
+							</div>
+							<div class="arrow-md" style="border-left: 50px solid #4E74B1 !important"></div>
 						</div>
+
 					</div>
-					<div class="arrow-md" style="border-left: 50px solid #4E74B1 !important"></div>
+
+					<div class="tab-pane" id="inversiones" role="tabpanel" aria-labelledby="inversiones-tab">
+						Inversiones
+					</div>
+  					<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
+						Patrimonio
+					</div>
 				</div>
 			</div>
 		</div>
@@ -220,7 +272,7 @@
 	<div id="ubicanos">
 		<div class="container">
 			<div class="col-lg-12">
-				<h1>Maps</h1>
+				<div id="map"></div>
 			</div>
 		</div>
 	</div>
@@ -299,6 +351,125 @@
 	<script src="{{asset('js/Page/jquery-3.2.1.min.js')}}"></script>
 	<script src="{{asset('css/Page/bootstrap4/popper.js')}}"></script>
 	<script src="{{asset('css/Page/bootstrap4/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/Page/moment/moment.js')}}"></script>
+	<script src="{{asset('js/Page/moment/moment-with-locales.js')}}"></script>
+	<script src="{{asset('js/Page/chart-2.7.3/chart.js')}}"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWuHgTNUdHd2A5oUq7Kw0qDeCtSL7tAZA&callback=initMap"></script>
+	<script type="text/javascript">
+		function initMap() {
+  			// The location of Uluru
+  			var uluru = {lat: -25.344, lng: 131.036};
+  			// The map, centered at Uluru
+  			var map = new google.maps.Map(
+     		 document.getElementById('map'), {zoom: 4, center: uluru});
+  			// The marker, positioned at Uluru
+  			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+
+		$( document ).ready(function() {
+			new Chart(document.getElementById("doughnut-chart-1"), {
+    			type: 'doughnut',
+    			data: {
+      				labels: ["item-1", "item-2"],
+      				datasets: [
+        				{
+          					backgroundColor: ["#DFDFDF", "#00528A"],
+          					data: [2478,5267]
+        				}
+      				]
+    			},
+    			options: {
+    				responsive: true,
+      				title: {
+        				display: true,
+        				text: '2014'
+      				}
+    			}
+			});
+
+			new Chart(document.getElementById("doughnut-chart-2"), {
+    			type: 'doughnut',
+    			data: {
+      				labels: ["item-1", "item-2"],
+      				datasets: [
+        				{
+          					backgroundColor: ["#DFDFDF", "#00528A"],
+          					data: [247,267]
+        				}
+      				]
+    			},
+    			options: {
+      				responsive: true,
+      				title: {
+        				display: true,
+        				text: '2015'
+      				}
+    			}
+			});
+
+			new Chart(document.getElementById("doughnut-chart-3"), {
+    			type: 'doughnut',
+    			data: {
+      				labels: ["item-1", "item-2"],
+      				datasets: [
+        				{
+          					backgroundColor: ["#DFDFDF", "#00528A"],
+          					data: [278,527]
+        				}
+      				]
+    			},
+    			options: {
+      				responsive: true,
+      				title: {
+        				display: true,
+        				text: '2016'
+      				}
+    			}
+			});
+
+			new Chart(document.getElementById("doughnut-chart-4"), {
+    			type: 'doughnut',
+    			data: {
+      				labels: ["item-1", "item-2"],
+      				datasets: [
+        				{
+          					backgroundColor: ["#DFDFDF", "#00528A"],
+          					data: [2478,5267]
+        				}
+      				]
+    			},
+    			options: {
+      				responsive: true,
+      				title: {
+        				display: true,
+        				text: '2017'
+      				}
+    			}
+			});
+
+			new Chart(document.getElementById("doughnut-chart-5"), {
+    			type: 'doughnut',
+    			data: {
+      				labels: ["item-1", "item-2"],
+      				datasets: [
+        				{
+          					backgroundColor: ["#DFDFDF", "#00528A"],
+          					data: [78,57]
+        				}
+      				]
+    			},
+    			options: {
+      				responsive: true,
+      				title: {
+        				display: true,
+        				text: '2018'
+      				}
+    			}
+			});
+
+			
+		});
+	</script>
 </body>
 
 </html>

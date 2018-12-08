@@ -2,6 +2,9 @@
 ** @author Alexander CD
 ** @date 03/12/2018
 **/
+div{
+	font-family: 'Montserrat' !important;
+}
 
 .background-nav{
 	background-color: rgb(0, 72, 119, 0.3) !important;
@@ -86,7 +89,7 @@
 .rectangle-md {
 	background-color: #152C50;
 	color: #FFF;
-	width: 80%;
+	width: 70%;
 	height: 40px;
 	margin-top: 15px;
 }
@@ -246,4 +249,18 @@
 	padding-top: 15px;
 	padding-bottom: 15px;	
 	color: #FFF;
+}
+
+/** beneficios **/
+.nav-beneficios {
+	border-bottom: none !important;
+}
+
+.nav-beneficios .nav-link.active {
+    border-color: transparent !important;
+}
+
+.nav-link {
+    padding: .5rem .2rem !important;
+    color: #000;
 }
