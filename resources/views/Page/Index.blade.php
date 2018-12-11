@@ -159,15 +159,15 @@
 							</div>
 
 							<div class="col-lg-2">
-								
+								<img class="d-block" src="{{asset('img/quienessomos/quienessomos-01.PNG')}}" alt="Quienes somos 01">
 							</div>	
 						</div>
 						
 					</div>
-					<div class="col-sm-2">Imagen</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<!-- Servicios -->
@@ -203,8 +203,8 @@
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div> 
             </p>
-            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen1.PNG')}}" alt="image1">
-            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen2.PNG')}}" alt="imagen2">
+            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-01.PNG')}}" alt="image1">
+            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-02.PNG')}}" alt="imagen2">
 					</div>
 				</div>
 			</div>
@@ -278,8 +278,31 @@
 					<div class="tab-pane" id="inversiones" role="tabpanel" aria-labelledby="inversiones-tab">
 						Inversiones
 					</div>
-  					<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
-						Patrimonio
+  				<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
+						<div class="row arrow-trans">
+              <div class="rectangle-md">
+                <div class="col-lg-12 arrow-center">
+                  ASESORAMIENTO
+                </div>
+              </div>
+              <div class="arrow-md" style="border-left: 50px solid #152C50 !important"></div>
+            </div>
+            <div class="row arrow-trans">
+              <div class="rectangle-md" style="background-color: #284778 !important; width: 55% !important;">
+                <div class="col-lg-12 arrow-center">
+                  DIVERSIFICACIÓN
+                </div>
+              </div>
+              <div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
+            </div>
+            <div class="row arrow-trans">
+              <div class="rectangle-md" style="background-color: #284778 !important; width: 65% !important;">
+                <div class="col-lg-12 arrow-center">
+                  RENTABILIDAD  
+                </div>
+                </div>
+              <div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
+            </div>
 					</div>
 				</div>
 			</div>
@@ -292,7 +315,7 @@
 	</div>
 
 	<!-- Contacto -->
-	<div id="contacto" class="bg-contacto">
+	<div id="contacto" class="bg-contacto" style="background-image: url('{{asset('img/slider/carrusel-01.JPG')}}');>
 		<div class="container">
 			<div class="col-lg-12">
 				<div class="row">
@@ -372,14 +395,19 @@
 	<script type="text/javascript">
 		$( document ).ready(function() {
       $('a[href^="#"]').click(function() {
+
         var destino = $(this.hash);
+        console.info(this.hash.substr(1));
         if (destino.length == 0) {
           destino = $('a[name="' + this.hash.substr(1) + '"]');
         }
         if (destino.length == 0) {
           destino = $('html');
         }
-        $('html, body').animate({ scrollTop: destino.offset().top }, 1000);
+        if(this.hash.substr(1) != "financiamiento" && this.hash.substr(1) != "inversiones" && this.hash.substr(1) != "patrimonio"){
+          $('html, body').animate({ scrollTop: destino.offset().top }, 1000);
+        }
+        
         return false;
       });
 
@@ -482,8 +510,6 @@
       				}
     			}
 			});
-
-			
 		});
 	</script>
 </body>

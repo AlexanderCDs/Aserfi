@@ -280,10 +280,8 @@ div{
 }
 
 .bg-contacto{
-	 background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
-
-  /* Half height */
-  height: 50%;
+	/* Half height */
+  	height: 50%;
 }
 
 /** Footer **/
@@ -291,7 +289,12 @@ div{
 	background-color: #21202D;
 	padding: 0px;
 	padding-top: 15px;
-	padding-bottom: 15px;	
+	padding-bottom: 15px;
+	border: 2px solid;
+	border-right: none;
+	border-left: none;
+	border-top-color: #337AB7;
+	border-bottom-color: #337AB7;
 	color: #FFF;
 }
 
@@ -309,7 +312,7 @@ div{
     color: #000;
 }
 
-#quienessomos, #servicios, #beneficios, #ubicanos{
+#quienessomos, #beneficios, #ubicanos{
 	margin: 0px;
 	margin-top: 5%;
 }
@@ -327,4 +330,20 @@ div{
 
 .servicios-img{
 	width: 75% !important;
+}
+
+.btn-return{
+	position: fixed;
+  	bottom: 0;
+  	right: 0;
+  	width: 16px;
+}
+
+.div-quienessomos{
+	margin-left: auto;
+}
+
+.img-quienessomos{
+	position: absolute;
+  	right: 0px;
 }
