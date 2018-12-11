@@ -6,6 +6,20 @@ div{
 	font-family: 'Montserrat' !important;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat' !important;
+}
+
+.carousel-indicators > li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #044D7E !important;
+}
+
 .background-nav{
 	background-color: rgb(0, 72, 119, 0.3) !important;
 }
@@ -56,9 +70,23 @@ div{
 
 /** Servicios **/
 .margin-servicos{
-	margin 0px;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	padding-top: 5%;
+}
+
+.margin-servicos-t1{
+	padding-top: 5%;
+}
+
+.margin-servicos-t2{
+	padding-top: 10%;
+}
+
+.margin-servicos-t3{
+	padding-top: 15%;
+}
+
+.margin-servicos-p{
+	padding-top: 25%;
 }
 
 /** Beneficios **/
@@ -104,9 +132,11 @@ div{
 	}
 
 	.margin-form-contacto {
-		margin 0px;
+		margin: 0px;
 		margin-top: 0%;
 		margin-bottom: 1%;
+		padding: 15px;
+		padding-top: 35px;
 	}
 
 	.margin-contacto {
@@ -121,9 +151,11 @@ div{
 	}
 
 	.margin-form-contacto {
-		margin 0px;
+		margin: 0px;
 		margin-top: 7%;
 		margin-bottom: 7%;
+		padding: 15px;
+		padding-top: 35px;
 	}
 
 	.margin-contacto {
@@ -165,9 +197,11 @@ div{
 	}
 
 	.margin-form-contacto {
-		margin 0px;
+		margin: 0px;
 		margin-top: 10%;
 		margin-bottom: 10%;
+		padding: 15px;
+		padding-top: 35px;
 	}
 
 	.margin-contacto {
@@ -220,6 +254,16 @@ div{
 
 /** Contacto **/
 
+.card{
+	border: 2px solid;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	border-radius: 0px;
+	border-top-color: #004877 !important;
+
+}
+
 .color-item-text{
 	background-color: #004877;
 	width: 40px;
@@ -245,7 +289,7 @@ div{
 /** Footer **/
 .bg-footer {
 	background-color: #21202D;
-	padding 0px;
+	padding: 0px;
 	padding-top: 15px;
 	padding-bottom: 15px;	
 	color: #FFF;
@@ -263,4 +307,24 @@ div{
 .nav-link {
     padding: .5rem .2rem !important;
     color: #000;
+}
+
+#quienessomos, #servicios, #beneficios, #ubicanos{
+	margin: 0px;
+	margin-top: 5%;
+}
+
+.progress{
+	height: 1px;
+	border-radius: 0px;
+}
+
+.progress-aserfi{
+	margin: -0.5rem;
+    height: 1rem;
+    position: absolute;
+}
+
+.servicios-img{
+	width: 75% !important;
 }

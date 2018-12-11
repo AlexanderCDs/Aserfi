@@ -54,7 +54,7 @@
         				<a class="nav-link color-nav-text" href="#ubicanos"></a>
       				</li>
       				<li class="nav-item">
-        				<a class="nav-link color-nav-text" href="#">
+        				<a class="nav-link color-nav-text" href="#ubicanos">
         					<i class="fas fa-map-marker-alt"></i>
         				</a>
       				</li>
@@ -84,7 +84,7 @@
 	  				</ol>
   					<div class="carousel-inner">
     					<div class="carousel-item active">
-      						<img class="d-block w-100" src="{{asset('img/carrusel-01.JPG')}}" alt="First slide">
+      						<img class="d-block w-100" src="{{asset('img/slider/carrusel-01.JPG')}}" alt="First slide">
       						<div class="carousel-caption d-none d-md-block center-text-carousel">
     							<h1>LA SITUACIÓN DEL MERCADO</h5>
     							<h1><b>A TU FAVOR</b></h5>
@@ -92,7 +92,7 @@
   							</div>
     					</div>
     					<div class="carousel-item">
-      						<img class="d-block w-100" src="{{asset('img/carrusel-02.JPG')}}" alt="Second slide">
+      						<img class="d-block w-100" src="{{asset('img/slider/carrusel-02.JPG')}}" alt="Second slide">
       						<div class="carousel-caption d-none d-md-block center-text-carousel">
     							<h1>LA SITUACIÓN DEL MERCADO</h5>
     							<h1><b>A TU FAVOR</b></h5>
@@ -100,7 +100,7 @@
   							</div>
 	    				</div>
     					<div class="carousel-item">
-      						<img class="d-block w-100" src="{{asset('img/carrusel-03.JPG')}}" alt="Third slide">
+      						<img class="d-block w-100" src="{{asset('img/slider/carrusel-03.JPG')}}" alt="Third slide">
       						<div class="carousel-caption d-none d-md-block center-text-carousel">
     							<h1>LA SITUACIÓN DEL MERCADO</h5>
     							<h1><b>A TU FAVOR</b></h5>
@@ -124,7 +124,7 @@
 	<!-- Quienes Somos -->
 	<div id="quienessomos">
 		<div class="container">
-			<div class="col-lg-12 margin-servicos">
+			<div class="col-lg-12">
 				<h1 class="text-center">¿Quiénes Somos?</h1>
 					<div class="row">
 						<div class="col-lg-2 "></div>
@@ -173,20 +173,38 @@
 	<!-- Servicios -->
 	<div id="servicios" class="background-service">
 		<div class="container color-nav-text">
-			<div class="col-lg-12 ">
-				<h1>Servicios</h1>
-				<div class="row margin-servicos">
+			<div class="col-lg-12 margin-servicos" >
+				<div class="row">
 					<div class="col-sm-6">
-						<h3>Financiamiento</h3>
+            <h2 class="margin-servicos-t1">Servicios</h2>
+						<h3 class="margin-servicos-t2">Financiamiento</h3>
 						<p>Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
-						<h3>Inversiones</h3>
+						<h3 class="margin-servicos-t2">Inversiones</h3>
 						<p>Instrumentos y búsqueda de socios inversionistas</p>
-						<h3>Patrimonio</h3>
+						<h3 class="margin-servicos-t3">Patrimonio</h3>
 						<p>Trabajamos como consejeros y coach financieros</p>
 					</div>
 					<div class="col-sm-6">
-						<h3>Another Title Here</h3>
-						<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought.</p>
+						<p class="margin-servicos-p">
+              ELABORACIÓN DE PROYECTOS DE INVERSIÓN
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>   
+            </p>
+            <p class="">
+              CRÉDITOS A LA MEDIDA
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div> 
+            </p>
+            <p class="">
+              MEJORA DE CONDICIONES
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div> 
+            </p>
+            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen1.PNG')}}" alt="image1">
+            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen2.PNG')}}" alt="imagen2">
 					</div>
 				</div>
 			</div>
@@ -270,11 +288,7 @@
 
 	<!-- Contacto -->
 	<div id="ubicanos">
-		<div class="container">
-			<div class="col-lg-12">
-				<div id="map"></div>
-			</div>
-		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.606494157693!2d-89.6020342850677!3d21.008405286009378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56777e5f469fd9%3A0x1364bbf2f3887df4!2sASERFI!5e0!3m2!1sen!2smx!4v1544496745121" frameborder="0" style="width: 100%;  height: 460px;" allowfullscreen></iframe>
 	</div>
 
 	<!-- Contacto -->
@@ -283,7 +297,7 @@
 			<div class="col-lg-12">
 				<div class="row">
 					<div class="col-lg-1"></div>
-					<div class="col-lg-5 margin-form-contacto">
+					<div class="col-lg-5 margin-form-contacto card">
 						<form>
 							<h1>Contacto</h1>
   							<div class="form-group">
@@ -333,7 +347,7 @@
         					<span>Correo</span>
         					
         					<ol>
-        						fgonzales@aserfi.mx
+        						fgonzalez@aserfi.mx
         					</ol>
     	  				</ul>
 					</div>
@@ -354,19 +368,21 @@
 	<script src="{{asset('js/Page/moment/moment.js')}}"></script>
 	<script src="{{asset('js/Page/moment/moment-with-locales.js')}}"></script>
 	<script src="{{asset('js/Page/chart-2.7.3/chart.js')}}"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWuHgTNUdHd2A5oUq7Kw0qDeCtSL7tAZA&callback=initMap"></script>
-	<script type="text/javascript">
-		function initMap() {
-  			// The location of Uluru
-  			var uluru = {lat: -25.344, lng: 131.036};
-  			// The map, centered at Uluru
-  			var map = new google.maps.Map(
-     		 document.getElementById('map'), {zoom: 4, center: uluru});
-  			// The marker, positioned at Uluru
-  			var marker = new google.maps.Marker({position: uluru, map: map});
-		}
 
+	<script type="text/javascript">
 		$( document ).ready(function() {
+      $('a[href^="#"]').click(function() {
+        var destino = $(this.hash);
+        if (destino.length == 0) {
+          destino = $('a[name="' + this.hash.substr(1) + '"]');
+        }
+        if (destino.length == 0) {
+          destino = $('html');
+        }
+        $('html, body').animate({ scrollTop: destino.offset().top }, 1000);
+        return false;
+      });
+
 			new Chart(document.getElementById("doughnut-chart-1"), {
     			type: 'doughnut',
     			data: {
