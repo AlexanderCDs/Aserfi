@@ -84,23 +84,7 @@
 	  				</ol>
   					<div class="carousel-inner">
     					<div class="carousel-item active">
-      						<img class="d-block w-100" src="{{asset('img/slider/carrusel-01.JPG')}}" alt="First slide">
-      						<div class="carousel-caption d-none d-md-block center-text-carousel">
-    							<h1>LA SITUACIÓN DEL MERCADO</h5>
-    							<h1><b>A TU FAVOR</b></h5>
-    							<p></p>
-  							</div>
-    					</div>
-    					<div class="carousel-item">
-      						<img class="d-block w-100" src="{{asset('img/slider/carrusel-02.JPG')}}" alt="Second slide">
-      						<div class="carousel-caption d-none d-md-block center-text-carousel">
-    							<h1>LA SITUACIÓN DEL MERCADO</h5>
-    							<h1><b>A TU FAVOR</b></h5>
-    							<p></p>
-  							</div>
-	    				</div>
-    					<div class="carousel-item">
-      						<img class="d-block w-100" src="{{asset('img/slider/carrusel-03.JPG')}}" alt="Third slide">
+      						<img class="d-block w-100" src="{{asset('img/slider/Seccion1.png')}}" alt="First slide">
       						<div class="carousel-caption d-none d-md-block center-text-carousel">
     							<h1>LA SITUACIÓN DEL MERCADO</h5>
     							<h1><b>A TU FAVOR</b></h5>
@@ -129,37 +113,48 @@
 					<div class="row">
 						<div class="col-lg-2 "></div>
 						<div class="col-lg-8 ">
-							Somos una firma de profecionales especializados en el sector financiero, nuestro momdelo de negocios se basa en capacitar la competecia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posible.
+							Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.
 						</div>
 						<div class="col-lg-2 "></div>
 				</div>
 				<div class="row margin-servicos">
 					<div class="col-sm-7">
 						<h4 class="text-center">TII PROMEDIO ANUALES 28 DÍAS</h4>
-						<div class="row">
-							<div class="col-lg-4">
-								<canvas id="doughnut-chart-1" width="50" height="50"></canvas>
-							</div>
-							<div class="col-lg-4">
-								<canvas id="doughnut-chart-2" width="50" height="50"></canvas>
-							</div>
-							<div class="col-lg-4">
-								<canvas id="doughnut-chart-3" width="50" height="50"></canvas>
-							</div>
-						</div>
+						
 						<div class="row">	
 							<div class="col-lg-2">
 								
 							</div>						
-							<div class="col-lg-4">
-								<canvas id="doughnut-chart-4" width="50" height="50"></canvas>
-							</div>
-							<div class="col-lg-4">
-								<canvas id="doughnut-chart-5" width="50" height="50"></canvas>
+							<div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <canvas id="doughnut-chart-1" width="50" height="50"></canvas>
+                  </div>
+                  <div class="col-lg-4">
+                    <canvas id="doughnut-chart-2" width="50" height="50"></canvas>
+                  </div>
+                  <div class="col-lg-4">
+                    <canvas id="doughnut-chart-3" width="50" height="50"></canvas>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-lg-2">
+                    
+                  </div>            
+                  <div class="col-lg-4">
+                    <canvas id="doughnut-chart-4" width="50" height="50"></canvas>
+                  </div>
+                  <div class="col-lg-4">
+                    <canvas id="doughnut-chart-5" width="50" height="50"></canvas>
+                  </div>
+                  <div class="col-lg-2" >
+                    
+                  </div>  
+                </div>
 							</div>
 
-							<div class="col-lg-2">
-								<img class="d-block" src="{{asset('img/quienessomos/quienessomos-01.PNG')}}" alt="Quienes somos 01">
+							<div class="col-lg-2 col-sm-12" >
+								<img class="d-block imgQuienes" src="{{asset('img/quienessomos/quienessomos.png')}}" alt="Quienes somos 01">
 							</div>	
 						</div>
 						
@@ -276,7 +271,13 @@
 					</div>
 
 					<div class="tab-pane" id="inversiones" role="tabpanel" aria-labelledby="inversiones-tab">
-						Inversiones
+            <div class="row">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4">
+                <canvas id="pie-chart-1" width="50" height="50"></canvas>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
 					</div>
   				<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
 						<div class="row arrow-trans">
@@ -315,7 +316,7 @@
 	</div>
 
 	<!-- Contacto -->
-	<div id="contacto" class="bg-contacto" style="background-image: url('{{asset('img/slider/carrusel-01.JPG')}}');>
+	<div id="contacto" class="bg-contacto" style="background-image: url('{{asset('img/seccion6.png')}}');">
 		<div class="container">
 			<div class="col-lg-12">
 				<div class="row">
@@ -394,7 +395,7 @@
 
 	<script type="text/javascript">
 		$( document ).ready(function() {
-      $('a[href^="#"]').click(function() {
+      /*$('a[href^="#"]').click(function() {
 
         var destino = $(this.hash);
         console.info(this.hash.substr(1));
@@ -409,7 +410,7 @@
         }
         
         return false;
-      });
+      });*/
 
 			new Chart(document.getElementById("doughnut-chart-1"), {
     			type: 'doughnut',
@@ -423,12 +424,15 @@
       				]
     			},
     			options: {
-    				responsive: true,
-      				title: {
-        				display: true,
-        				text: '2014'
-      				}
-    			}
+            legend: {
+              display: false
+            },
+            responsive: true,
+            title: {
+              display: true,
+              text: '2014'
+            }
+          }
 			});
 
 			new Chart(document.getElementById("doughnut-chart-2"), {
@@ -443,11 +447,14 @@
       				]
     			},
     			options: {
-      				responsive: true,
-      				title: {
-        				display: true,
-        				text: '2015'
-      				}
+            legend: {
+              display: false
+            },
+      			responsive: true,
+      			title: {
+        			display: true,
+        			text: '2015'
+      			}
     			}
 			});
 
@@ -463,12 +470,15 @@
       				]
     			},
     			options: {
-      				responsive: true,
-      				title: {
-        				display: true,
-        				text: '2016'
-      				}
-    			}
+            legend: {
+              display: false
+            },
+            responsive: true,
+            title: {
+              display: true,
+              text: '2016'
+            }
+          }
 			});
 
 			new Chart(document.getElementById("doughnut-chart-4"), {
@@ -483,12 +493,15 @@
       				]
     			},
     			options: {
-      				responsive: true,
-      				title: {
-        				display: true,
-        				text: '2017'
-      				}
-    			}
+            legend: {
+              display: false
+            },
+            responsive: true,
+            title: {
+              display: true,
+              text: '2017'
+            }
+          }
 			});
 
 			new Chart(document.getElementById("doughnut-chart-5"), {
@@ -503,14 +516,40 @@
       				]
     			},
     			options: {
-      				responsive: true,
-      				title: {
-        				display: true,
-        				text: '2018'
-      				}
-    			}
+            legend: {
+              display: false
+            },
+            responsive: true,
+            title: {
+              display: true,
+              text: '2018'
+            }
+          }
 			});
 		});
+
+    new Chart(document.getElementById("pie-chart-1"), {
+          type: 'pie',
+          data: {
+              labels: ["SEGURIDAD", "INTERNACIONALIZACIÓN", "MEJORA DE RENDIMIENTOS"],
+              datasets: [
+                {
+                    backgroundColor: ["#00375D", "#3275B3", "#064E8B"],
+                    data: [30, 30, 30]
+                }
+              ]
+          },
+          options: {
+            legend: {
+              display: false
+            },
+            responsive: true,
+            title: {
+              display: true,
+              text: ''
+            }
+          }
+      });
 	</script>
 </body>
 

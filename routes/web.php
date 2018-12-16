@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('Page.Index');
 });
+
+Route::get('Panel', function () {
+    return view('Dashboard.Index');
+});
