@@ -49,24 +49,6 @@ div{
 	margin-left: 50px;
 }
 
-@media (min-width: 868px){
-	.carousel-item{
-   		height: calc(100vh - 8vw);
-	} 
-	.carousel-item img{
-    	height: calc(100vh - 8vw);
-	}
-}
-
-@media (min-width: 1100px){
-	.carousel-item{
-   		height: calc(115vh - 8vw);
-	} 
-	.carousel-item img{
-    	height: calc(115vh - 8vw);
-	}
-}
-
 
 /** Servicios **/
 .margin-servicos{
@@ -346,4 +328,11 @@ div{
 .img-quienessomos{
 	position: absolute;
   	right: 0px;
+}
+
+
+/*Contacto*/
+
+.mui-textfield--float-label>label {
+    color: rgba(0,0,0) !important;
 }
