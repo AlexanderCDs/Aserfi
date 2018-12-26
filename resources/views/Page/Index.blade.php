@@ -9,7 +9,8 @@
     <meta name="keywords" content="au theme template">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="icon" href="{{asset('img/logo.png')}}">
+
     <!-- Title Page-->
     <title>Aserfi</title>
 
@@ -37,10 +38,10 @@
   			<div class="collapse navbar-collapse pull-right pull-right-nav" id="navegador">
     			<ul class="navbar-nav mr-auto">
  	     			<li class="nav-item active">
-	        			<a class="nav-link color-nav-text" href="#carrusel">Inicio</a>
+	        			<a class="scroll-car nav-link color-nav-text" href="#carrusel">Inicio</a>
     	  			</li>
      			 	<li class="nav-item">
-        				<a class="scroll-qs nav-link color-nav-text" href="#quienesSomosNav">Quiénes somos</a>
+        				<a class="scroll-qs nav-link color-nav-text" href="#">Quiénes somos</a>
       				</li>
 	      			<li class="nav-item">
     	    			<a class="scroll-s nav-link color-nav-text" href="#servicios">Servicios</a>
@@ -79,7 +80,7 @@
 			<div class="">
 				<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
   					<ol class="carousel-indicators">
-    					<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+    					<!--<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>-->
 	  				</ol>
   					<div class="carousel-inner">
     					<div class="carousel-item active">
@@ -102,25 +103,26 @@
 				</div>
 			</div>
 		</div>
-    <a href="#" id="btnQuienesSomos" class="btn btn-success btn-aserfi btn-round">
-      <i class="fas fa-map-marker-alt"></i>
-    </a>
+    <div class="text-center">
+      <a href="#" id="btnQuienesSomos" class="btn btn-success btn-aserfi btn-round-inicio">
+        <i class="fas fa-angle-double-down"></i>
+      </a>
+    </div>
     	
 	</div>
-  <div id="quienesSomosNav">
-    </br>
+  <div id="quienesSomosNav" style="padding-top: 55px">
   </div>
 	<!-- Quienes Somos -->
 	<div id="quienessomos">
 		<div class="container">
 			<div class="col-lg-12">
-				<h1 class="text-center fadeInLeft animated">¿QUIÉNES SOMOS?</h1>
-					<div class="row">
-						<div class="col-lg-2 "></div>
-						<div class="col-lg-8 ">
-							Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.
-						</div>
-						<div class="col-lg-2 "></div>
+				<h1 class="text-center fadeInLeft animated"><b>¿QUIÉNES SOMOS?</b></h1>
+				<div class="row">
+					<div class="col-lg-2 "></div>
+					<div class="col-lg-8 ">
+						Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.
+					</div>
+					<div class="col-lg-2 "></div>
 				</div>
 				<div class="row margin-servicos">
 					<div class="col-sm-7">
@@ -155,7 +157,7 @@
                   <div class="col-lg-2" >
                     
                   </div> 
-                  Funte: Banxico, Banco de México 
+                   <a href="http://www.banxico.org.mx/">Funte: Banxico, Banco de México </a>
                 </div>
 							</div>
 
@@ -216,7 +218,7 @@
 			<div class="col-lg-12 margin-servicos" >
 				<div class="row">
 					<div class="col-sm-6">
-            <h2 class="margin-servicos-t1">Servicios</h2>
+            <h2 class="margin-servicos-t1"><b>SERVICIOS</b></h2>
 						<h3 class="margin-servicos-t2">Financiamiento</h3>
 						<p>Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
 						<h3 class="margin-servicos-t2">Inversiones</h3>
@@ -285,7 +287,7 @@
 							<div class="arrow-md" style="border-left: 50px solid #152C50 !important"></div>
 						</div>
 						<div class="row fadeInLeft animated">
-							<div class="rectangle-md" style="background-color: #284778 !important; width: 55% !important;">
+							<div class="rectangle-md" style="background-color: #284778 !important; width: 63% !important;">
 								<div class="col-lg-12 arrow-center">
 									ELABORACIÓN DE PROYECTOS A LA MEDIDA
 								</div>
@@ -293,7 +295,7 @@
 							<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
 						</div>
 						<div class="row fadeInLeft animated">
-							<div class="rectangle-md" style="background-color: #284778 !important; width: 65% !important;">
+							<div class="rectangle-md" style="background-color: #284778 !important; width: 67% !important;">
 								<div class="col-lg-12 arrow-center">
 									SELECCIÓN DE INSTITUCIÓN ESPECIALIZADA
 									</div>
@@ -322,7 +324,7 @@
 					<div class="tab-pane" id="inversiones" role="tabpanel" aria-labelledby="inversiones-tab">
             <div class="row">
               <div class="col-lg-4"></div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 jello animated">
                 <canvas id="pie-chart-1" width="50" height="50"></canvas>
               </div>
               <div class="col-lg-4"></div>
@@ -337,7 +339,7 @@
               </div>
             </div>
             <div class="row fadeInLeft animated">
-              <div class="rectangle-md" style="background-color: #284778 !important; width: 60% !important;">
+              <div class="rectangle-md" style="background-color: #4275B1 !important; width: 60% !important;">
                 <div class="col-lg-12 arrow-center">
                   DIVERSIFICACIÓN
                 </div>
@@ -345,7 +347,7 @@
               
             </div>
             <div class="row fadeInLeft animated">
-              <div class="rectangle-md" style="background-color: #284778 !important; width: 70% !important;">
+              <div class="rectangle-md" style="background-color: #4E74B1 !important; width: 70% !important;">
                 <div class="col-lg-12 arrow-center">
                   RENTABILIDAD  
                 </div>
@@ -363,8 +365,8 @@
   </div>
 
 	<!-- Contacto -->
-	<div id="ubicanos">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.606494157693!2d-89.6020342850677!3d21.008405286009378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56777e5f469fd9%3A0x1364bbf2f3887df4!2sASERFI!5e0!3m2!1sen!2smx!4v1544496745121" frameborder="0" style="width: 100%;  height: 460px;" allowfullscreen class="background-nav"></iframe>
+	<div id="ubicanos" class="bg-ubicanos">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.606494157693!2d-89.6020342850677!3d21.008405286009378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56777e5f469fd9%3A0x1364bbf2f3887df4!2sASERFI!5e0!3m2!1sen!2smx!4v1544496745121" frameborder="0" style="width: 100%;  height: 460px;" allowfullscreen class="bg-ubicanos"></iframe>
 	</div>
 
 	<!-- Contacto -->
@@ -375,7 +377,7 @@
 					<div class="col-lg-1"></div>
 					<div class="col-lg-5 margin-form-contacto card">
 						<form class="mui-form">
-                <legend>Contacto</legend>
+                <legend><b>CONTACATO</b></legend>
                
                 <div class="mui-textfield mui-textfield--float-label">
                   <input type="text" id="cNombre" name="cNombre">

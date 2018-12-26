@@ -3,11 +3,11 @@
 ** @date 03/12/2018
 **/
 div{
-	font-family: 'Montserrat' !important;
+	font-family: 'Rubik' !important;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat' !important;
+	font-family: 'Rubik' !important;
 }
 
 .carousel-indicators > li {
@@ -104,12 +104,19 @@ div{
 	margin-top: 15px;
 }
 
+
 .arrow-center {
+	margin-top: 5px;
+   	margin-bottom: 5px;
+    font-size: 1.6em;
 	margin-left: 25%;
 }
 
 @media (min-width: 430px){
 	.arrow-center {
+		margin-top: 5px;
+   	 	margin-bottom: 5px;
+    	font-size: 1.6em;
 		margin-left: 0%;
 	}
 
@@ -129,7 +136,8 @@ div{
 
 @media (min-width: 868px){
 	.arrow-center {
-		margin-left: 150px;
+		margin-top: 10px;
+		margin-left: 0px;
 	}
 
 	.margin-form-contacto {
@@ -174,8 +182,10 @@ div{
 
 @media (min-width: 1100px){
 	.arrow-center {
-		margin-bottom: 10px;
-		margin-left: 300px;
+		margin-top: 5px;
+   	 	margin-bottom: 5px;
+    	margin-left: 300px;
+    	font-size: 1.6em;
 	}
 
 	.margin-form-contacto {
@@ -261,6 +271,14 @@ div{
 	border-radius: 50%;
 }
 
+.btn-round-inicio{
+	position: absolute;
+    margin-top: -20px;
+	border-radius: 50%;
+	border: 2px;
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255) !important;
+}
+
 .bg-contacto{
 	/* Half height */
   	height: 50%;
@@ -335,4 +353,15 @@ div{
 
 .mui-textfield--float-label>label {
     color: rgba(0,0,0) !important;
+}
+
+/** ubicanos **/
+
+.bg-ubicanos{
+	background-color: rgb(0, 72, 119, 0.3);
+	position: relative;
+}
+
+.bg-ubicanos:hover{
+	background-color: none;
 }
