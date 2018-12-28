@@ -9,7 +9,7 @@
     <meta name="keywords" content="au theme template">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{asset('img/logo.png')}}">
+    <link rel="icon" href="{{asset('img/logo_azul.png')}}">
 
     <!-- Title Page-->
     <title>Aserfi</title>
@@ -38,25 +38,25 @@
   			<div class="collapse navbar-collapse pull-right pull-right-nav" id="navegador">
     			<ul class="navbar-nav mr-auto">
  	     			<li class="nav-item active">
-	        			<a class="scroll-car nav-link color-nav-text" href="#carrusel">Inicio</a>
+	        			<a class="scroll-car nav-link color-nav-text smooth" href="#carrusel">Inicio</a>
     	  			</li>
      			 	<li class="nav-item">
-        				<a class="scroll-qs nav-link color-nav-text" href="#">Quiénes somos</a>
+        				<a class="scroll-qs nav-link color-nav-text smooth" href="#quienesSomosNav">Quiénes Somos</a>
       				</li>
 	      			<li class="nav-item">
-    	    			<a class="scroll-s nav-link color-nav-text" href="#servicios">Servicios</a>
+    	    			<a class="scroll-s nav-link color-nav-text smooth" href="#servicios">Servicios</a>
       				</li>
       				<li class="nav-item">
-        				<a class="scroll-b nav-link color-nav-text" href="#beneficiosNav">Beneficios</a>
+        				<a class="scroll-b nav-link color-nav-text smooth" href="#beneficiosNav">Beneficios</a>
 	      			</li>
     	  			<li class="nav-item">
-        				<a class="scroll-c nav-link color-nav-text" href="#contacto">Contacto</a>
+        				<a class="scroll-c nav-link color-nav-text smooth" href="#contacto">Contacto</a>
       				</li>
       				<li class="nav-item nav-item-margin">
         				<a class="nav-link color-nav-text" href="#"></a>
       				</li>
       				<li class="nav-item">
-        				<a class="scroll-u nav-link color-nav-text" href="#ubicanosNav">
+        				<a class="scroll-u nav-link color-nav-text smooth" href="#ubicanosNav">
         					<i class="fas fa-map-marker-alt"></i>
         				</a>
       				</li>
@@ -104,13 +104,13 @@
 			</div>
 		</div>
     <div class="text-center">
-      <a href="#" id="btnQuienesSomos" class="btn btn-success btn-aserfi btn-round-inicio">
+      <a href="#quienesSomosNav" id="btnQuienesSomos" class="btn btn-success btn-aserfi btn-round-inicio smooth">
         <i class="fas fa-angle-double-down"></i>
       </a>
     </div>
     	
 	</div>
-  <div id="quienesSomosNav" style="padding-top: 55px">
+  <div id="quienesSomosNav">
   </div>
 	<!-- Quienes Somos -->
 	<div id="quienessomos">
@@ -118,96 +118,70 @@
 			<div class="col-lg-12">
 				<h1 class="text-center fadeInLeft animated"><b>¿QUIÉNES SOMOS?</b></h1>
 				<div class="row">
-					<div class="col-lg-2 "></div>
-					<div class="col-lg-8 ">
-						Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.
-					</div>
-					<div class="col-lg-2 "></div>
+          <div class="col-lg-1"> </div>
+          <div class="col-lg-10">
+            <p>
+              Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.
+            </p>
+          </div>
+          <div class="col-lg-1"> </div>
 				</div>
-				<div class="row margin-servicos">
-					<div class="col-sm-7">
-						<h4 class="text-center">TIIE PROMEDIO ANUALES 28 DÍAS</h4>
-						
-						<div class="row">	
-							<div class="col-lg-2">
-								
-							</div>						
-							<div class="col-lg-8">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <canvas id="doughnut-chart-1" width="50" height="50"></canvas>
-                  </div>
-                  <div class="col-lg-4">
-                    <canvas id="doughnut-chart-2" width="50" height="50"></canvas>
-                  </div>
-                  <div class="col-lg-4">
-                    <canvas id="doughnut-chart-3" width="50" height="50"></canvas>
-                  </div>
-                </div>
-                <div class="row"> 
-                  <div class="col-lg-2">
-                    
-                  </div>            
-                  <div class="col-lg-4">
-                    <canvas id="doughnut-chart-4" width="50" height="50"></canvas>
-                  </div>
-                  <div class="col-lg-4">
-                    <canvas id="doughnut-chart-5" width="50" height="50"></canvas>
-                  </div>
-                  <div class="col-lg-2" >
-                    
-                  </div> 
-                   <a href="http://www.banxico.org.mx/">Funte: Banxico, Banco de México </a>
-                </div>
-							</div>
+        <div class="row" style="padding-top: 40px">
+          <div class="col-lg-2"> </div>
+          <div class="col-lg-8">
+            <div id="fundadores">
+              <div class="col-lg-12">
+                <div class="">
+                  <div id="indicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{asset('img/fundadores/fundador_slider01.png')}}" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block center-text-carousel">
+                          
+                        </div>
+                      </div>
 
-							<div class="col-lg-2 col-sm-12" >
-								<img class="img-fluid" src="{{asset('img/quienessomos/quienessomos.png')}}" alt="Quienes somos 01">
-							</div>	
-						</div>
-						
-					</div>
-				</div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="{{asset('img/fundadores/fundador_slider02.png')}}" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block center-text-carousel">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!--<a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"> </div>
+        </div>
 			</div>
 		</div>
 	</div>
 
-  <div id="fundadores" style="display: none;">
+    <!-- Quienes Somos -->
+  <div id="video-aserfi" class="bg-aserfi-video" style="margin-top: 50px; margin-bottom: 50px;">
     <div class="container">
       <div class="col-lg-12">
-        <h1 class="text-center fadeInLeft animated">FUNDADORES</h1>
         <div class="row">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-lg-3"> </div>
-              <div class="col-lg-8 text-center">
-                  <h4>Fernando Gonzalez de Salceda Urbina</h4>
-                  <img class="img-fluid rounded" src="{{asset('img/fundadores/fundador01.png')}}" alt="Fundador 1">
-                  <span class="">
-                    Egresado de la Universidad de la Iberoamericana en
-                    Administración de Empresas con Maestría en Finanzas en el ITAM. Con 36 años de
-                    experiencia en el sector financiero.
-                  </span>
-              </div>
-              <div class="col-lg-1"> </div>
+          <div class="col-lg-1"> </div>
+          <div class="col-lg-10">
+            <div class="embed-responsive embed-responsive-16by9" style="position: absolute; display: none;">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
+            <img class="d-block w-100" src="{{asset('img/fundadores/video.jpg')}}" alt="First slide">
           </div>
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-lg-1"> </div>
-              <div class="col-lg-8 text-center">
-                  <h4>Fernando Gonzalez de Salceda Heshem</h4>
-                  <img class="img-fluid rounded" src="{{asset('img/fundadores/fundador02.png')}}" alt="Fundador 2">
-                  <span class="">
-                    Egresado del Tecnológico de monterrey Campus
-                    Monterrey de la carrera de Ingeniería industrial con certificación en figura 3 de la
-                    Asociación Mexicana de Intermediario Bursátiles.
-                  </span>
-              </div>
-              <div class="col-lg-3"> </div>
-            </div>
-          </div>
+          <div class="col-lg-1"> </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -215,53 +189,80 @@
 	<!-- Servicios -->
 	<div id="servicios" class="background-service">
 		<div class="container color-nav-text">
-			<div class="col-lg-12 margin-servicos" >
-				<div class="row">
-					<div class="col-sm-6">
-            <h2 class="margin-servicos-t1"><b>SERVICIOS</b></h2>
-						<h3 class="margin-servicos-t2">Financiamiento</h3>
-						<p>Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
-						<h3 class="margin-servicos-t2">Inversiones</h3>
-						<p>Instrumentos y búsqueda de socios inversionistas</p>
-						<h3 class="margin-servicos-t3">Patrimonio</h3>
-						<p>Trabajamos como consejeros y coach financieros</p>
-					</div>
-					<div class="col-sm-6">
-						<p class="margin-servicos-p">
+			<div class="col-lg-12" >
+        <div class="row">
+          <div class="col-lg-1"> </div>
+          <div class="col-lg-10">
+            <h1 style="padding-top: 50px;"><b>SERVICIOS</b></h1>
+          </div>
+          <div class="col-lg-1"> </div>
+        </div>
+				<div class="row" >
+          <div class="col-lg-1"> </div>
+          <div class="col-lg-5" style="padding-top: 20px;">
+            <h1 style=" padding-bottom: 20px;"><b>Financiamiento</b></h1>
+            <p>Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
+          </div>
+          <div class="col-lg-5" style="padding-top: 70px;" >
+            <p>
               ELABORACIÓN DE PROYECTOS DE INVERSIÓN
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>   
             </p>
-            <p class="">
+            <p>
               CRÉDITOS A LA MEDIDA
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div> 
             </p>
-            <p class="">
+            <p>
               MEJORA DE CONDICIONES
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div> 
             </p>
-            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-01.PNG')}}" alt="image1">
-            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-02.PNG')}}" alt="imagen2">
-					</div>
+          </div>
+          <div class="col-lg-1"> </div>
 				</div>
+
+        <div class="row" >
+          <div class="col-lg-1"> </div>
+          <div class="col-lg-5" style="padding-top: 20px;">
+            <h1><b>Inversiones</b></h1>
+            <p>Instrumentos y búsqueda de socios inversionistas</p>
+          </div>
+          <div class="col-lg-5" style="padding-top: 50px;" >
+            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-01.PNG')}}" alt="image1">
+          </div>
+          <div class="col-lg-1"> </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-lg-1"> </div>
+          <div class="col-lg-5" style="padding-top: 20px;">
+            <h1><b>Patrimonio</b></h1>
+            <p>Trabajamos como consejeros y coach financieros</p>
+          </div>
+          <div class="col-lg-5" style="padding-top: 50px;" >
+            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-02.PNG')}}" alt="imagen2">
+          </div>
+          <div class="col-lg-1"> </div>
+        </div>
+
 			</div>
 		</div>
 	</div>
 
   <div id="beneficiosNav">
-    </br>
+    
   </div>
 
 	<!-- Beneficios -->
 	<div id="beneficios">
 		<div class="">
 			<div class="col-lg-12 ">
-				<h1 class="text-center">Beneficios</h1>
+				<h1 class="text-center"><b>BENEFICIOS</b></h1>
 
 					<ul class="nav nav-fill nav-tabs nav-beneficios" id="tabBeneficios" role="tablist">
   						<li class="nav-item">
@@ -323,11 +324,11 @@
 
 					<div class="tab-pane" id="inversiones" role="tabpanel" aria-labelledby="inversiones-tab">
             <div class="row">
-              <div class="col-lg-4"></div>
-              <div class="col-lg-4 jello animated">
+              <div class="col-lg-4 col-sm-4"></div>
+              <div class="col-lg-4 col-sm-4 jello animated">
                 <canvas id="pie-chart-1" width="50" height="50"></canvas>
               </div>
-              <div class="col-lg-4"></div>
+              <div class="col-lg-4 col-sm-4"></div>
             </div>
 					</div>
   				<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
@@ -361,7 +362,7 @@
 	</div>
 
   <div id="ubicanosNav">
-    </br>
+    
   </div>
 
 	<!-- Contacto -->
@@ -377,7 +378,7 @@
 					<div class="col-lg-1"></div>
 					<div class="col-lg-5 margin-form-contacto card">
 						<form class="mui-form">
-                <legend><b>CONTACATO</b></legend>
+                <legend style="margin-left: 10px;"><b>CONTACTO</b></legend>
                
                 <div class="mui-textfield mui-textfield--float-label">
                   <input type="text" id="cNombre" name="cNombre">
@@ -408,29 +409,29 @@
     	  					<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-map-marker-alt"></i>
     	  					</a>
-        					<span>Ubicación</span>
-        					<ol>
-        						Calle 16 No. 61A x 3 y 5 C.P. 97139 San Antonio Cinta. Mérida, Yucatán.
+        					<span style="margin-left: 15px;"><b>Ubicación</b></span>
+        					<ol style="margin-left: 20px;">
+        						Calle 16 No. 61A x 3 y 5 C.P. 97139 </br>San Antonio Cinta. Mérida, Yucatán.
         					</ol>
       						
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-phone"></i>
     	  					</a>
-        					<span>Teléfono</span>
+        					<span style="margin-left: 15px;"><b>Teléfono</b></span>
         					
-        					<ol>
+        					<ol style="margin-left: 20px;">
         						(999) 422 5312
         					</ol>
-        					<ol>
+        					<ol style="margin-left: 20px;">
         						(999) 322 8638
         					</ol>
 
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-envelope"></i>
     	  					</a>
-        					<span>Correo</span>
+        					<span style="margin-left: 15px;"><b>Correo</b></span>
         					
-        					<ol>
+        					<ol style="margin-left: 20px;">
         						fgonzalez@aserfi.mx
         					</ol>
     	  				</ul>

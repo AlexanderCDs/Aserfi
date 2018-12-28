@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
   AOS.init({
@@ -6,32 +5,43 @@ $(document).ready(function () {
     duration: 1000
   });
 
-  $('#btnQuienesSomos').on('click', function (e) {
-    $('html, body').animate({
-      scrollTop: $(window).height()
-    }, 1200);
+  $('a.smooth').on('click', function (e) {
+    e.preventDefault();
+    var link = $(this);
+    var anchor = link.attr('href');
+    $('html, body').stop().animate({
+      scrollTop: $(anchor).offset().top - ($('#navegador').height() + 21)
+    }, 1500);
   });
 
-  $('.scroll-qs').on('click', function (e) {
-    $('html, body').animate({
-      scrollTop: $(window).height()
-    }, 1200);
+  $('#financiamiento-tab').on('click', function (e) {
+    $('#financiamiento-tab').removeClass('jello animated');
+    setTimeout(function(){
+      $('#financiamiento-tab').addClass('jello animated');
+    }, 250);
   });
 
-  $('.scroll-car').on('click', function (e) {
-    $('body, nav').animate({
-      scrollTop: $(window).height()
-    }, 1200);
+  $('#inversiones-tab').on('click', function (e) {
+    $('#inversiones-tab').removeClass('jello animated');
+    setTimeout(function(){
+      $('#inversiones-tab').addClass('jello animated');
+    }, 250);
   });
 
+  $('#patrimonio-tab').on('click', function (e) {
+    $('#patrimonio-tab').removeClass('jello animated');
+    setTimeout(function(){
+      $('#patrimonio-tab').addClass('jello animated');
+    }, 250);
+  });
 
-  new Chart(document.getElementById("doughnut-chart-1"), {
-    type: 'doughnut',
+  new Chart(document.getElementById("pie-chart-1"), {
+    type: 'pie',
     data: {
-      labels: ["item-1", "item-2"],
+      labels: ["SEGURIDAD", "INTERNACIONALIZACIÓN", "MEJORA DE RENDIMIENTOS"],
       datasets: [{
-        backgroundColor: ["#DFDFDF", "#00528A"],
-        data: [2478, 5267]
+        backgroundColor: ["#00375D", "#3275B3", "#064E8B"],
+        data: [30, 30, 30]
       }]
     },
     options: {
@@ -41,113 +51,10 @@ $(document).ready(function () {
       responsive: true,
       title: {
         display: true,
-        text: '2014'
+        text: ''
       }
     }
   });
 
-  new Chart(document.getElementById("doughnut-chart-2"), {
-    type: 'doughnut',
-    data: {
-      labels: ["item-1", "item-2"],
-      datasets: [{
-        backgroundColor: ["#DFDFDF", "#00528A"],
-        data: [247, 267]
-      }]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      responsive: true,
-      title: {
-        display: true,
-        text: '2015'
-      }
-    }
-  });
 
-  new Chart(document.getElementById("doughnut-chart-3"), {
-    type: 'doughnut',
-    data: {
-      labels: ["item-1", "item-2"],
-      datasets: [{
-        backgroundColor: ["#DFDFDF", "#00528A"],
-        data: [278, 527]
-      }]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      responsive: true,
-      title: {
-        display: true,
-        text: '2016'
-      }
-    }
-  });
-
-  new Chart(document.getElementById("doughnut-chart-4"), {
-    type: 'doughnut',
-    data: {
-      labels: ["item-1", "item-2"],
-      datasets: [{
-        backgroundColor: ["#DFDFDF", "#00528A"],
-        data: [2478, 5267]
-      }]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      responsive: true,
-      title: {
-        display: true,
-        text: '2017'
-      }
-    }
-  });
-
-  new Chart(document.getElementById("doughnut-chart-5"), {
-    type: 'doughnut',
-    data: {
-      labels: ["item-1", "item-2"],
-      datasets: [{
-        backgroundColor: ["#DFDFDF", "#00528A"],
-        data: [78, 57]
-      }]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      responsive: true,
-      title: {
-        display: true,
-        text: '2018'
-      }
-    }
-  });
-});
-
-new Chart(document.getElementById("pie-chart-1"), {
-  type: 'pie',
-  data: {
-    labels: ["SEGURIDAD", "INTERNACIONALIZACIÓN", "MEJORA DE RENDIMIENTOS"],
-    datasets: [{
-      backgroundColor: ["#00375D", "#3275B3", "#064E8B"],
-      data: [30, 30, 30]
-    }]
-  },
-  options: {
-    legend: {
-      display: false
-    },
-    responsive: true,
-    title: {
-      display: true,
-      text: ''
-    }
-  }
 });

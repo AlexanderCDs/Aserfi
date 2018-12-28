@@ -4,6 +4,7 @@
 **/
 div{
 	font-family: 'Rubik' !important;
+	font-size: 1.1em;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -108,7 +109,7 @@ div{
 .arrow-center {
 	margin-top: 5px;
    	margin-bottom: 5px;
-    font-size: 1.6em;
+    font-size: .8em;
 	margin-left: 25%;
 }
 
@@ -116,7 +117,6 @@ div{
 	.arrow-center {
 		margin-top: 5px;
    	 	margin-bottom: 5px;
-    	font-size: 1.6em;
 		margin-left: 0%;
 	}
 
@@ -129,7 +129,7 @@ div{
 	}
 
 	.margin-contacto {
-		margin-top: 2%;
+		margin-top: 10px;
 	}
 }
 
@@ -149,7 +149,7 @@ div{
 	}
 
 	.margin-contacto {
-		margin-top: 14%;
+		margin-top: 15px;
 	}
 
 	@-moz-keyframes arrow-trans {
@@ -185,7 +185,6 @@ div{
 		margin-top: 5px;
    	 	margin-bottom: 5px;
     	margin-left: 300px;
-    	font-size: 1.6em;
 	}
 
 	.margin-form-contacto {
@@ -197,7 +196,7 @@ div{
 	}
 
 	.margin-contacto {
-		margin-top: 14%;
+		margin-top: 15px;
 	}
 
 	@-moz-keyframes arrow-trans {
@@ -305,10 +304,13 @@ div{
 
 .nav-beneficios .nav-link.active {
     border-color: transparent !important;
+    border-bottom-color: #13294C;
+    border: 1px solid;
 }
 
 .nav-link {
     padding: .5rem .2rem !important;
+    padding-left: .7rem !important;
     color: #000;
 }
 
@@ -364,4 +366,14 @@ div{
 
 .bg-ubicanos:hover{
 	background-color: none;
+}
+
+
+.fundador{
+	/*text-align: right !important;*/
+	color: #000;
+}
+
+.bg-aserfi-video{
+	background-color: #03293E;
 }

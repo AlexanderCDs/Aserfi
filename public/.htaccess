@@ -16,6 +16,6 @@
 
     # Handle Authorization Header
     RewriteCond %{HTTPS:Authorization} .
-    
+    RewriteCond %{HTTP_HOST} ^www.aserfi.mx [NC]
     RewriteRule ^(.*)$ https://www.aserfi.mx/$1 [R,L]
 </IfModule>
