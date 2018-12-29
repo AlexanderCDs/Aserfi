@@ -4,7 +4,7 @@
 **/
 div{
 	font-family: 'Rubik' !important;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -34,7 +34,7 @@ div{
 }
 
 .center-text-carousel{
-	margin-bottom: 15% !important;
+	margin-bottom: 20% !important;
 }
 
 .col-without-padding{
@@ -50,6 +50,14 @@ div{
 	margin-left: 50px;
 }
 
+.line-nav{
+	border-right-color: transparent !important;
+    border-left-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom-color: #FFF;
+    border: 3px solid;
+    padding-bottom: 0px;
+}
 
 /** Servicios **/
 .margin-servicos{
@@ -115,8 +123,8 @@ div{
 
 @media (min-width: 430px){
 	.arrow-center {
-		margin-top: 5px;
-   	 	margin-bottom: 5px;
+		margin-top: 10px;
+   	 	margin-bottom: 10px;
 		margin-left: 0%;
 	}
 
@@ -130,6 +138,23 @@ div{
 
 	.margin-contacto {
 		margin-top: 10px;
+	}
+	div{
+		font-family: 'Rubik' !important;
+		font-size: 1em;
+	}
+	
+	.center-text-carousel{
+		margin-bottom: 5% !important;
+	}
+	
+	.d-md-block {
+    	display: block!important;
+	}
+	.h1-class{
+		margin-bottom: 0px; 
+		margin-top: 0px; 
+		font-size: 1em;
 	}
 }
 
@@ -150,6 +175,15 @@ div{
 
 	.margin-contacto {
 		margin-top: 15px;
+	}
+
+	div{
+		font-family: 'Rubik' !important;
+		font-size: 1.1em;
+	}
+
+	.center-text-carousel{
+		margin-bottom: 10% !important;
 	}
 
 	@-moz-keyframes arrow-trans {
@@ -197,6 +231,31 @@ div{
 
 	.margin-contacto {
 		margin-top: 15px;
+	}
+
+	div{
+		font-family: 'Rubik' !important;
+		font-size: 1.1em;
+	}
+
+	.carousel-index, .carousel-inner-index > .item > img {
+  		height: 510px;
+	}
+	
+	.carousel-index, .carousel-inner-index > .item {
+ 		height: 510px;
+	}
+
+	.carousel-index, .carousel-inner-index{
+  		height: 510px;
+	}
+
+	.center-text-carousel{
+		margin-bottom: 20% !important;
+	}
+
+	.h1-class{
+		font-size: 1.5em;
 	}
 
 	@-moz-keyframes arrow-trans {
@@ -303,15 +362,17 @@ div{
 }
 
 .nav-beneficios .nav-link.active {
-    border-color: transparent !important;
-    border-bottom-color: #13294C;
-    border: 1px solid;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom-color: #4275B1;
+    border: 3px solid;
 }
 
 .nav-link {
-    padding: .5rem .2rem !important;
-    padding-left: .7rem !important;
+    padding: .5rem .5rem .5rem .5rem !important;
     color: #000;
+    display: inline-flex !important;
 }
 
 #quienessomos, #beneficios, #ubicanos{

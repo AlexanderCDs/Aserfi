@@ -37,10 +37,10 @@
 
   			<div class="collapse navbar-collapse pull-right pull-right-nav" id="navegador">
     			<ul class="navbar-nav mr-auto">
- 	     			<li class="nav-item active">
-	        			<a class="scroll-car nav-link color-nav-text smooth" href="#carrusel">Inicio</a>
+ 	     			  <li class="nav-item active">
+	        			<a class="scroll-car nav-link color-nav-text smooth line-nav" href="#carrusel">Inicio</a>
     	  			</li>
-     			 	<li class="nav-item">
+     			 	  <li class="nav-item">
         				<a class="scroll-qs nav-link color-nav-text smooth" href="#quienesSomosNav">Quiénes Somos</a>
       				</li>
 	      			<li class="nav-item">
@@ -78,18 +78,18 @@
 	<div id="carrusel">
 		<div class="col-lg-12 col-without-padding">
 			<div class="">
-				<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+				<div id="carouselIndicators" class="carousel carousel-index slide" data-ride="carousel">
   					<ol class="carousel-indicators">
     					<!--<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>-->
 	  				</ol>
-  					<div class="carousel-inner">
+  					<div class="carousel-inner carousel-inner-index">
     					<div class="carousel-item active">
       						<img class="d-block w-100" src="{{asset('img/slider/seccion1.png')}}" alt="First slide">
       						<div class="carousel-caption d-none d-md-block center-text-carousel">
-    							<h1 class="bounceIn animated">LA SITUACIÓN DEL MERCADO</h5>
-    							<h1 class="bounceIn animated"><b>A TU FAVOR</b></h5>
-    							<p></p>
-  							</div>
+                    <h1 class="bounceIn animated h1-class">LA SITUACIÓN DEL MERCADO</h5>
+                    <h1 class="bounceIn animated h1-class"><b>A TU FAVOR</b></h5>
+                    <p></p>
+                  </div>
     					</div>
   					</div>
 	  				<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -172,14 +172,12 @@
     <div class="container">
       <div class="col-lg-12">
         <div class="row">
-          <div class="col-lg-1"> </div>
-          <div class="col-lg-10">
+          <div class="col-lg-12">
             <div class="embed-responsive embed-responsive-16by9" style="position: absolute; display: none;">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
-            <img class="d-block w-100" src="{{asset('img/fundadores/video.jpg')}}" alt="First slide">
+            <img class="d-block w-100" src="{{asset('img/fundadores/video.png')}}" alt="First slide">
           </div>
-          <div class="col-lg-1"> </div>
         </div>
         
       </div>
@@ -263,18 +261,18 @@
 		<div class="">
 			<div class="col-lg-12 ">
 				<h1 class="text-center"><b>BENEFICIOS</b></h1>
-
-					<ul class="nav nav-fill nav-tabs nav-beneficios" id="tabBeneficios" role="tablist">
+          
+					<ul class="nav nav-fill nav-tabs nav-beneficios" id="tabBeneficios" role="tablist" style="margin-top: 40px; margin-bottom: 39px;">
   						<li class="nav-item">
-  							<a class="nav-link active" id="financiamiento-tab" data-toggle="tab" href="#financiamiento" role="tab" aria-controls="financiamiento" aria-selected="true">Financiamiento</a>
+  							<a class="nav-link active" id="financiamiento-tab" data-toggle="tab" href="#financiamiento" role="tab" aria-controls="financiamiento" aria-selected="true">Financiamiento </a>
   						</li>
   						<li class="nav-item">
-  							<a class="nav-link" id="inversiones-tab" data-toggle="tab" href="#inversiones" role="tab" aria-controls="inversiones" aria-selected="true">Inversiones</a>
+  							<a class="nav-link" id="inversiones-tab" data-toggle="tab" href="#inversiones" role="tab" aria-controls="inversiones" aria-selected="true">Inversiones </a>
   						</li>
   						<li class="nav-item">
-  							<a class="nav-link" id="patrimonio-tab" data-toggle="tab" href="#patrimonio" role="tab" aria-controls="patrimonio" aria-selected="true">Patrimonio</a>
+  							<a class="nav-link" id="patrimonio-tab" data-toggle="tab" href="#patrimonio" role="tab" aria-controls="patrimonio" aria-selected="true">Patrimonio </a>
   						</li>
-  					</ul>
+  				</ul>
 
 				<div class="tab-content">
 					<div class="tab-pane active" id="financiamiento" role="tabpanel" aria-labelledby="financiamiento-tab">

@@ -9,6 +9,8 @@ $(document).ready(function () {
     e.preventDefault();
     var link = $(this);
     var anchor = link.attr('href');
+    $('a.smooth').removeClass('line-nav');
+    $(this).addClass('line-nav');
     $('html, body').stop().animate({
       scrollTop: $(anchor).offset().top - ($('#navegador').height() + 21)
     }, 1500);
