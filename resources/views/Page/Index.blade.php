@@ -4,7 +4,7 @@
 	<!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
+    <meta name="description" content="Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.">
     <meta name="author" content="Arthur CD & Cindy CV">
     <meta name="keywords" content="au theme template">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -84,13 +84,25 @@
 	  				</ol>
   					<div class="carousel-inner carousel-inner-index">
     					<div class="carousel-item active">
-      						<img class="d-block w-100" src="{{asset('img/slider/seccion1.png')}}" alt="First slide">
+      						<img class="d-block w-100" src="{{asset('img/slider/Banner_1_Seccion1.png')}}" alt="First slide">
       						<div class="carousel-caption d-none d-md-block center-text-carousel">
                     <h1 class="bounceIn animated h1-class">LA SITUACIÓN DEL MERCADO</h5>
                     <h1 class="bounceIn animated h1-class"><b>A TU FAVOR</b></h5>
                     <p></p>
                   </div>
     					</div>
+              <div class="carousel-item ">
+                  <img class="d-block w-100" src="{{asset('img/slider/Banner_2_Seccion1.png')}}" alt="First slide">
+                  
+              </div>
+              <div class="carousel-item ">
+                  <img class="d-block w-100" src="{{asset('img/slider/Banner_3_Seccion1.png')}}" alt="First slide">
+                  
+              </div>
+              <!--<div class="carousel-item ">
+                  <img class="d-block w-100" src="{{asset('img/slider/Banner_4_Seccion1.png')}}" alt="First slide">
+                  
+              </div>-->
   					</div>
 	  				<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
     					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -116,7 +128,7 @@
 	<div id="quienessomos">
 		<div class="container">
 			<div class="col-lg-12">
-				<h1 class="text-center fadeInLeft animated"><b>¿QUIÉNES SOMOS?</b></h1>
+				<h1 class="text-center hover-title fadeInLeft animated"><b class="titulo-secciones-azul">¿QUIÉNES SOMOS?</b></h1>
 				<div class="row">
           <div class="col-lg-1"> </div>
           <div class="col-lg-10">
@@ -136,26 +148,30 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="d-block w-100" src="{{asset('img/fundadores/fundador_slider01.png')}}" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block center-text-carousel">
-                          
+                        <div class="carousel-caption carousel-caption-fundadores">
+                          <h2><b>Fernando González de Salceda Urbina</b></h2>
+                          <p class="h4">Egresado de la Universidad de la Iberoamericana en Administración de Empresas con Maestría en Finanzas en el ITAM. Con 36 años de experiencia en el sector financiero.</p>
                         </div>
                       </div>
 
                       <div class="carousel-item">
                         <img class="d-block w-100" src="{{asset('img/fundadores/fundador_slider02.png')}}" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block center-text-carousel">
-                          
+                        <div class="carousel-caption carousel-caption-fundadores">
+                          <h2><b>Fernando González de Salceda Heshem</b></h2>
+                          <p class="h4">Egresado del Tecnológico de monterrey Campus Monterrey de la carrera de Ingeniería industrial con certificación en figura 3 de la Asociación Mexicana de Intermediario Bursátiles</p>
                         </div>
                       </div>
                     </div>
-                    <!--<a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon carousel-control-prev-icon-fundadores" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-next-icon carousel-control-next-icon-fundadores" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
-                    </a>-->
+                    </a>
+
                   </div>
                 </div>
               </div>
@@ -168,7 +184,7 @@
 	</div>
 
     <!-- Quienes Somos -->
-  <div id="video-aserfi" class="bg-aserfi-video" style="margin-top: 50px; margin-bottom: 50px;">
+  <div id="video-aserfi" class="bg-aserfi-video" style="margin-top: 50px; margin-bottom: 1px;">
     <div class="container">
       <div class="col-lg-12">
         <div class="row">
@@ -189,11 +205,9 @@
 		<div class="container color-nav-text">
 			<div class="col-lg-12" >
         <div class="row">
-          <div class="col-lg-1"> </div>
-          <div class="col-lg-10">
-            <h1 style="padding-top: 50px;"><b>SERVICIOS</b></h1>
+          <div class="col-lg-12 text-center">
+            <h1 class="hover-title " style="padding-top: 50px;"><b class="titulo-secciones-blanco">SERVICIOS</b></h1>
           </div>
-          <div class="col-lg-1"> </div>
         </div>
 				<div class="row" >
           <div class="col-lg-1"> </div>
@@ -260,7 +274,7 @@
 	<div id="beneficios">
 		<div class="">
 			<div class="col-lg-12 ">
-				<h1 class="text-center"><b>BENEFICIOS</b></h1>
+				<h1 class="text-center hover-title "><b class="titulo-secciones-azul">BENEFICIOS</b></h1>
           
 					<ul class="nav nav-fill nav-tabs nav-beneficios" id="tabBeneficios" role="tablist" style="margin-top: 40px; margin-bottom: 39px;">
   						<li class="nav-item">
@@ -277,7 +291,7 @@
 				<div class="tab-content">
 					<div class="tab-pane active" id="financiamiento" role="tabpanel" aria-labelledby="financiamiento-tab">
 						
-						<div class="row fadeInLeft animated">
+						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md">
 								<div class="col-lg-12 arrow-center">
 									AHORROS EN TIEMPO DE RESPUESTA
@@ -285,7 +299,7 @@
 							</div>
 							<div class="arrow-md" style="border-left: 50px solid #152C50 !important"></div>
 						</div>
-						<div class="row fadeInLeft animated">
+						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #284778 !important; width: 63% !important;">
 								<div class="col-lg-12 arrow-center">
 									ELABORACIÓN DE PROYECTOS A LA MEDIDA
@@ -293,7 +307,7 @@
 							</div>
 							<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
 						</div>
-						<div class="row fadeInLeft animated">
+						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #284778 !important; width: 67% !important;">
 								<div class="col-lg-12 arrow-center">
 									SELECCIÓN DE INSTITUCIÓN ESPECIALIZADA
@@ -301,7 +315,7 @@
 								</div>
 							<div class="arrow-md" style="border-left: 50px solid #284778 !important"></div>
 						</div>
-						<div class="row fadeInLeft animated">
+						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #4275B1 !important; width: 75% !important;">
 								<div class="col-lg-12 arrow-center">
 									MEJORA DE TÉRMINOS Y CONDICIONES
@@ -309,7 +323,7 @@
 							</div>
 							<div class="arrow-md" style="border-left: 50px solid #4275B1 !important"></div>
 						</div>
-						<div class="row fadeInLeft animated">
+						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #4E74B1 !important; width: 70% !important;">
 								<div class="col-lg-12 arrow-center">
 									MITIGACIÓN DE RIESGOS
@@ -321,23 +335,23 @@
 					</div>
 
 					<div class="tab-pane" id="inversiones" role="tabpanel" aria-labelledby="inversiones-tab">
-            <div class="row">
-              <div class="col-lg-4 col-sm-4"></div>
-              <div class="col-lg-4 col-sm-4 jello animated">
-                <canvas id="pie-chart-1" width="50" height="50"></canvas>
+            <div class="row fadeInLeft animated">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8">
+                <img class="d-block w-100" src="{{asset('img/beneficios/inversiones.png')}}" alt="First slide">
               </div>
-              <div class="col-lg-4 col-sm-4"></div>
+              <div class="col-lg-2"></div>
             </div>
 					</div>
   				<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
-						<div class="row fadeInLeft animated">
+						<div class="row hover-title fadeInLeft animated">
               <div class="rectangle-md" style="background-color: #284778 !important; width: 50% !important;">
                 <div class="col-lg-12 arrow-center">
                   ASESORAMIENTO
                 </div>
               </div>
             </div>
-            <div class="row fadeInLeft animated">
+            <div class="row hover-title fadeInLeft animated">
               <div class="rectangle-md" style="background-color: #4275B1 !important; width: 60% !important;">
                 <div class="col-lg-12 arrow-center">
                   DIVERSIFICACIÓN
@@ -345,7 +359,7 @@
               </div>
               
             </div>
-            <div class="row fadeInLeft animated">
+            <div class="row hover-title fadeInLeft animated">
               <div class="rectangle-md" style="background-color: #4E74B1 !important; width: 70% !important;">
                 <div class="col-lg-12 arrow-center">
                   RENTABILIDAD  
@@ -407,19 +421,16 @@
     	  					<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-map-marker-alt"></i>
     	  					</a>
-        					<span style="margin-left: 15px;"><b>Ubicación</b></span>
+        					<span style="margin-left: 15px;">Calle 16 No. 61A x 3 y 5 C.P. 97139</span>
         					<ol style="margin-left: 20px;">
-        						Calle 16 No. 61A x 3 y 5 C.P. 97139 </br>San Antonio Cinta. Mérida, Yucatán.
+        						 San Antonio Cinta. Mérida, Yucatán.
         					</ol>
       						
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-phone"></i>
     	  					</a>
-        					<span style="margin-left: 15px;"><b>Teléfono</b></span>
+        					<span style="margin-left: 15px;">(999) 422 5312</span>
         					
-        					<ol style="margin-left: 20px;">
-        						(999) 422 5312
-        					</ol>
         					<ol style="margin-left: 20px;">
         						(999) 322 8638
         					</ol>
@@ -427,11 +438,8 @@
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-envelope"></i>
     	  					</a>
-        					<span style="margin-left: 15px;"><b>Correo</b></span>
+        					<span style="margin-left: 15px;">fgonzalez@aserfi.mx</span>
         					
-        					<ol style="margin-left: 20px;">
-        						fgonzalez@aserfi.mx
-        					</ol>
     	  				</ul>
 					</div>
 					<div class="col-lg-1"></div>

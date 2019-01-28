@@ -16,6 +16,17 @@ $(document).ready(function () {
     }, 1500);
   });
 
+  $( ".hover-title" ).hover(function() {
+    $( this ).removeClass("fadeInLeft animated");
+    setTimeout(function(){
+       $( this ).addClass("fadeInLeft animated");
+    }, 250);
+  }, function() {
+    $( this ).addClass("fadeInLeft animated");
+    
+    
+  });
+
   $('#financiamiento-tab').on('click', function (e) {
     $('#financiamiento-tab').removeClass('jello animated');
     setTimeout(function(){
@@ -36,27 +47,4 @@ $(document).ready(function () {
       $('#patrimonio-tab').addClass('jello animated');
     }, 250);
   });
-
-  new Chart(document.getElementById("pie-chart-1"), {
-    type: 'pie',
-    data: {
-      labels: ["SEGURIDAD", "INTERNACIONALIZACIÓN", "MEJORA DE RENDIMIENTOS"],
-      datasets: [{
-        backgroundColor: ["#00375D", "#3275B3", "#064E8B"],
-        data: [30, 30, 30]
-      }]
-    },
-    options: {
-      legend: {
-        display: false
-      },
-      responsive: true,
-      title: {
-        display: true,
-        text: ''
-      }
-    }
-  });
-
-
 });
