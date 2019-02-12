@@ -61,7 +61,7 @@
         				</a>
       				</li>
       				<li class="nav-item">
-	        			<a class="nav-link color-nav-text" href="https://www.facebook.com/">
+	        			<a class="nav-link color-nav-text" href="https://www.facebook.com/AserfiMX/" target="_blank">
     	    				<i class="fab fa-facebook-f"></i>
         				</a>
       				</li>
@@ -129,6 +129,7 @@
 		<div class="container">
 			<div class="col-lg-12">
 				<h1 class="text-center hover-title fadeInLeft animated"><b class="titulo-secciones-azul">¿QUIÉNES SOMOS?</b></h1>
+
 				<div class="row">
           <div class="col-lg-1"> </div>
           <div class="col-lg-10">
@@ -186,16 +187,22 @@
     <!-- Quienes Somos -->
   <div id="video-aserfi" class="bg-aserfi-video" style="margin-top: 50px; margin-bottom: 1px;">
     <div class="container">
-      <div class="col-lg-12">
+      <div id="divVideo" class="col-lg-12 divNotActive">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="iframeVideo" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+      <div id="divBtn" class="col-lg-12">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="embed-responsive embed-responsive-16by9" style="position: absolute; display: none;">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-            </div>
-            <img class="d-block w-100" src="{{asset('img/fundadores/video.png')}}" alt="First slide">
+          <div class="container-video">
+            <img class="d-block w-100" src="{{asset('img/fundadores/video.png')}}" alt="">
+            <svg version="1.1" id="btn-play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+              <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5"/>
+              <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5"/>
+              <path class="icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+            </svg>
           </div>
         </div>
-        
       </div>
     </div>
   </div>
@@ -421,7 +428,7 @@
     	  					<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-map-marker-alt"></i>
     	  					</a>
-        					<span style="margin-left: 15px;">Calle 16 No. 61A x 3 y 5 C.P. 97139</span>
+        					<span style="margin-left: 15px;">C. 16 No. 61A x 3 y 5 C.P. 97139</span>
         					<ol style="margin-left: 20px;">
         						 San Antonio Cinta. Mérida, Yucatán.
         					</ol>

@@ -47,4 +47,12 @@ $(document).ready(function () {
       $('#patrimonio-tab').addClass('jello animated');
     }, 250);
   });
+
+  $("#btn-play").click(function() {
+    $('#divVideo').removeClass('divNotActive');
+    $('#divVideo').addClass('divVideoPadding');
+    $('#divBtn').addClass('divNotActive');
+    $("#iframeVideo").attr("src","https://www.youtube-nocookie.com/embed/TkTDdsBGQu8?autoplay=1");
+    
+  });
 });
