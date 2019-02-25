@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('Page.Index');
 });
 
-Route::get('Panel', function () {
-    return view('Dashboard.Index');
-});
+Route::resource('/Aserfi-cp', 'InicioSesionController');
+
+Route::get('/Usuarios', 'UsuariosController@index');//->middleware('menu');
+Route::get('/Carrusel', 'CarruselController@index');//->middleware('menu');
+Route::get('/QuienesSomos', 'QuienesSomosController@index');//->middleware('menu');
+Route::get('/Servicios', 'ServiciosController@index');//->middleware('menu');
+Route::get('/Beneficios', 'BeneficiosController@index');//->middleware('menu');
+Route::get('/Contacto', 'ContactoController@index');//->middleware('menu');
+
+//Route::get('/Aserfi-cp/', 'Controller@index');//->middleware('menu');

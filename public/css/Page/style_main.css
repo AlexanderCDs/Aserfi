@@ -121,42 +121,7 @@ div{
 	margin-left: 25%;
 }
 
-@media (min-width: 430px){
-	.arrow-center {
-		margin-top: 10px;
-   	 	margin-bottom: 10px;
-		margin-left: 0%;
-	}
 
-	.margin-form-contacto {
-		margin: 0px;
-		margin-top: 0%;
-		margin-bottom: 1%;
-		padding: 15px;
-		padding-top: 35px;
-	}
-
-	.margin-contacto {
-		margin-top: 10px;
-	}
-	div{
-		font-family: 'Rubik' !important;
-		font-size: 1em;
-	}
-	
-	.center-text-carousel{
-		margin-bottom: 5% !important;
-	}
-	
-	.d-md-block {
-    	display: block!important;
-	}
-	.h1-class{
-		margin-bottom: 0px; 
-		margin-top: 0px; 
-		font-size: 1em;
-	}
-}
 
 
 @media (min-width: 868px){
@@ -579,4 +544,362 @@ div{
 
 .divVideoPadding{
 	padding: 50px;
+}
+
+.navbar-dark .navbar-toggler {
+    
+    border-color: transparent !important;
+}
+
+
+
+@media screen and (min-width: 100px) and (max-width: 550px) {
+
+	#carrusel{
+		margin-top: 60px;
+	}
+
+	.center-text-carousel{
+		margin-bottom: 0% !important;
+	}
+
+	.h1-class{
+		font-size: 17px;
+		margin: 0px !important;
+	}
+
+	.btn-round-inicio {
+    	margin-left: -15px;
+    	position: absolute;
+    	margin-top: -20px;
+    	border-radius: 50%;
+    	border: 2px;
+    	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255) !important;
+	}
+
+	.titulo-secciones-azul {
+   		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #004270;
+    	border-top-color: #004270;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.titulo-secciones-blanco{
+		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #FFF;
+    	border-top-color: #FFF;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.titulo-border{
+		border: 3px solid;
+	}
+
+	.h1-smt{
+		margin-top: -10px;
+	}
+
+	.h1-servivios{
+		text-align: center !important;
+		font-size: 20px;
+	}
+
+	.p-servivios{
+		font-size: 17px;
+		text-align: center !important;
+	}
+
+	.p-graficas{
+		margin-top: 10px;
+	}
+
+	.img-inversiones{
+		margin-top: 10px;
+	}
+
+	.arrow-center {
+		margin-top: 7px;
+   		margin-bottom: 8px;
+   	 	font-size: .8em;
+		margin-left: 0px;
+	}
+
+	.divVideoPadding{
+		padding: 15px;
+	}
+
+	.margin-form-contacto {
+		padding: 15px;
+		margin: 15px;
+	}
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 850px) {
+
+	#carrusel{
+		margin-top: 30px;
+	}
+
+	.center-text-carousel{
+		margin-bottom: 10% !important;
+	}
+
+	.h1-class{
+		font-size: 24px;
+		margin: 0px !important;
+	}
+
+	.btn-round-inicio {
+    	margin-left: -15px;
+    	position: absolute;
+    	margin-top: -20px;
+    	border-radius: 50%;
+    	border: 2px;
+    	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255) !important;
+	}
+
+	.titulo-secciones-azul {
+   		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #004270;
+    	border-top-color: #004270;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.titulo-secciones-blanco{
+		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #FFF;
+    	border-top-color: #FFF;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.titulo-border{
+		border: 3px solid;
+	}
+
+	.h1-smt{
+		margin-top: -10px;
+	}
+
+	.h1-servivios{
+		text-align: center !important;
+		font-size: 20px;
+	}
+
+	.p-servivios{
+		font-size: 17px;
+		text-align: center !important;
+	}
+
+	.p-graficas{
+		margin-top: 10px;
+	}
+
+	.img-inversiones{
+		margin-top: 10px;
+	}
+
+	.arrow-center {
+		margin-top: 10px;
+   		margin-bottom: 10px;
+   	 	font-size: 1em;
+		margin-left: 50px;
+	}
+
+	.divVideoPadding{
+		padding: 15px;
+	}
+
+	.margin-form-contacto {
+		padding: 15px;
+		margin: 15px;
+	}
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+
+	#carrusel{
+		margin-top: 20px;
+	}
+
+	.center-text-carousel{
+		margin-bottom: 10% !important;
+	}
+
+	.h1-class{
+		font-size: 34px;
+		margin: 0px !important;
+	}
+
+	.btn-round-inicio {
+    	margin-left: -15px;
+    	position: absolute;
+    	margin-top: -20px;
+    	border-radius: 50%;
+    	border: 2px;
+    	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255) !important;
+	}
+
+	.titulo-secciones-azul {
+   		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #004270;
+    	border-top-color: #004270;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.titulo-secciones-blanco{
+		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #FFF;
+    	border-top-color: #FFF;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.titulo-border{
+		border: 3px solid;
+	}
+
+	.h1-smt{
+		margin-top: -10px;
+	}
+
+	.h1-servivios{
+		text-align: center !important;
+		font-size: 20px;
+	}
+
+	.p-servivios{
+		font-size: 17px;
+		text-align: center !important;
+	}
+
+	.p-graficas{
+		margin-top: 10px;
+	}
+
+	.img-inversiones{
+		margin-top: 10px;
+	}
+
+	.arrow-center {
+		margin-top: 0px;
+   		margin-bottom: 0px;
+   	 	font-size: 1em;
+		margin-left: 50px;
+	}
+
+	.divVideoPadding{
+		padding: 15px;
+	}
+
+	.margin-form-contacto {
+		padding: 15px;
+		margin: 15px;
+	}
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+
+	#carrusel{
+		margin-top: 20px;
+	}
+
+
+	.h1-class{
+		font-size: 34px;
+		margin: 0px !important;
+	}
+
+	.btn-round-inicio {
+    	margin-left: -15px;
+    	position: absolute;
+    	margin-top: -20px;
+    	border-radius: 50%;
+    	border: 2px;
+    	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255) !important;
+	}
+
+	.titulo-secciones-azul {
+   		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #004270;
+    	border-top-color: #004270;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.titulo-secciones-blanco{
+		border-right-color: transparent !important;
+    	border-left-color: transparent !important;
+    	border-bottom-color: #FFF;
+    	border-top-color: #FFF;
+    	padding: 5px;
+    	font-size: 25px;
+	}
+
+	.p-quienes{
+		font-size: 20px;
+	}
+
+	.titulo-border{
+		border: 3px solid;
+	}
+
+	.h1-smt{
+		margin-top: -10px;
+	}
+
+	.h1-servivios{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	.p-servivios{
+		font-size: 17px;
+	}
+
+	.p-graficas{
+		margin-top: 40px;
+		font-size: 15px;
+	}
+
+	.img-inversiones{
+		margin-top: 10px;
+	}
+
+	.arrow-center {
+		margin-top: 0px;
+   		margin-bottom: 0px;
+   	 	font-size: 1em;
+		margin-left: 50px;
+	}
+
+	.divVideoPadding{
+		padding: 40px;
+	}
+
+	.margin-form-contacto {
+		padding: 15px;
+		margin: 15px;
+	}
+
 }

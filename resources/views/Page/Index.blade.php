@@ -26,7 +26,7 @@
 <body>
 	<!-- Navegador -->
 
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light background-nav">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark background-nav">
 		<div class="container">
   			<a class="navbar-brand color-nav-text" href="#">
   				<img src="{{asset('img/logo.png')}}" width="50" height="50" class="d-inline-block align-top" alt="">
@@ -85,7 +85,7 @@
   					<div class="carousel-inner carousel-inner-index">
     					<div class="carousel-item active">
       						<img class="d-block w-100" src="{{asset('img/slider/Banner_1_Seccion1.png')}}" alt="First slide">
-      						<div class="carousel-caption d-none d-md-block center-text-carousel">
+      						<div class="carousel-caption center-text-carousel">
                     <h1 class="bounceIn animated h1-class">LA SITUACIÓN DEL MERCADO</h5>
                     <h1 class="bounceIn animated h1-class"><b>A TU FAVOR</b></h5>
                     <p></p>
@@ -128,12 +128,12 @@
 	<div id="quienessomos">
 		<div class="container">
 			<div class="col-lg-12">
-				<h1 class="text-center hover-title fadeInLeft animated"><b class="titulo-secciones-azul">¿QUIÉNES SOMOS?</b></h1>
+				<h1 class="text-center hover-title-seccion zoomIn animated"><b class="titulo-secciones-azul">¿QUIÉNES SOMOS?</b></h1>
 
 				<div class="row">
           <div class="col-lg-1"> </div>
           <div class="col-lg-10">
-            <p>
+            <p class="p-quienes">
               Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.
             </p>
           </div>
@@ -213,17 +213,17 @@
 			<div class="col-lg-12" >
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h1 class="hover-title " style="padding-top: 50px;"><b class="titulo-secciones-blanco">SERVICIOS</b></h1>
+            <h1 class="hover-title-seccion "><b class="titulo-secciones-blanco">SERVICIOS</b></h1>
           </div>
         </div>
 				<div class="row" >
           <div class="col-lg-1"> </div>
-          <div class="col-lg-5" style="padding-top: 20px;">
-            <h1 style=" padding-bottom: 20px;"><b>Financiamiento</b></h1>
-            <p>Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
+          <div class="col-lg-5" >
+            <h1 class="h1-servivios h1-smt"><b>Financiamiento</b></h1>
+            <p class="p-servivios">Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
           </div>
-          <div class="col-lg-5" style="padding-top: 70px;" >
-            <p>
+          <div class="col-lg-5">
+            <p class="p-graficas">
               ELABORACIÓN DE PROYECTOS DE INVERSIÓN
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -247,21 +247,21 @@
 
         <div class="row" >
           <div class="col-lg-1"> </div>
-          <div class="col-lg-5" style="padding-top: 20px;">
-            <h1><b>Inversiones</b></h1>
-            <p>Instrumentos y búsqueda de socios inversionistas</p>
+          <div class="col-lg-5">
+            <h1 class="h1-servivios"><b>Inversiones</b></h1>
+            <p class="p-servivios">Instrumentos y búsqueda de socios inversionistas</p>
           </div>
-          <div class="col-lg-5" style="padding-top: 50px;" >
-            <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-01.PNG')}}" alt="image1">
+          <div class="col-lg-5">
+            <img class="d-block w-100 img-inversiones" style="width: 75%" src="{{asset('img/servicios/imagen-01.PNG')}}" alt="image1">
           </div>
           <div class="col-lg-1"> </div>
         </div>
 
         <div class="row" >
           <div class="col-lg-1"> </div>
-          <div class="col-lg-5" style="padding-top: 20px;">
-            <h1><b>Patrimonio</b></h1>
-            <p>Trabajamos como consejeros y coach financieros</p>
+          <div class="col-lg-5">
+            <h1 class="h1-servivios"><b>Patrimonio</b></h1>
+            <p class="p-servivios">Trabajamos como consejeros y coach financieros</p>
           </div>
           <div class="col-lg-5" style="padding-top: 50px;" >
             <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-02.PNG')}}" alt="imagen2">
@@ -281,7 +281,7 @@
 	<div id="beneficios">
 		<div class="">
 			<div class="col-lg-12 ">
-				<h1 class="text-center hover-title "><b class="titulo-secciones-azul">BENEFICIOS</b></h1>
+				<h1 class="text-center hover-title-seccion "><b class="titulo-secciones-azul">BENEFICIOS</b></h1>
           
 					<ul class="nav nav-fill nav-tabs nav-beneficios" id="tabBeneficios" role="tablist" style="margin-top: 40px; margin-bottom: 39px;">
   						<li class="nav-item">

@@ -23,8 +23,15 @@ $(document).ready(function () {
     }, 250);
   }, function() {
     $( this ).addClass("fadeInLeft animated");
-    
-    
+  });
+
+  $( ".hover-title-seccion" ).hover(function() {
+    $( this ).removeClass("zoomIn animated");
+    setTimeout(function(){
+       $( this ).addClass("zoomIn animated");
+    }, 250);
+  }, function() {
+    $( this ).addClass("zoomIn animated");
   });
 
   $('#financiamiento-tab').on('click', function (e) {
