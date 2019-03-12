@@ -36,9 +36,18 @@
                      <label>Correo electrónico</label>
                   </div>
                </div>
+               <div class="col-lg-12 text-right" style="margin: 5px;">
+                  <button class="btn btn-sm btn-success" id="btnGuardar">
+                     <i class="material-icons" >check</i> Guardar
+                  </button>
+               </div>
             </div>
          </form>
       </div>
    </div>
 </main>
+@endsection
+
+@section('JSGenerico')
+<script src="{{asset('js/Dashboard/Contacto.js')}}"></script>
 @endsection

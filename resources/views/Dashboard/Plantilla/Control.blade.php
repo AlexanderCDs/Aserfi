@@ -121,6 +121,15 @@
     <script src="{{asset('css/Page/bootstrap4/bootstrap.min.js')}}"></script>
     <script src="{{asset('plugins/mui-0.9.41/js/mui.min.js')}}"></script>
     <script src="{{asset('js/Dashboard/material.min.js')}}"></script>
+
+    <!-- jquery-validation-1.17.0 -->
+    <script src="{{asset('plugins/jquery-validation-1.17.0/jquery.validate.js')}}"></script>
+    <script src="{{asset('plugins/jquery-validation-1.17.0/jquery.validate.min.js')}}"></script>
+    <script src="{{asset('plugins/jquery-validation-1.17.0/additional-methods.js')}}"></script>
+    <script src="{{asset('plugins/jquery-validation-1.17.0/additional-methods.min.js')}}"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
     <!-- Para incrustar js adicional -->
     @yield('JSGenerico')
   </body>

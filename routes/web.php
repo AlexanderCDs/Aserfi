@@ -18,10 +18,14 @@ Route::get('/', function () {
 Route::resource('/Aserfi-cp', 'InicioSesionController');
 
 Route::get('/Usuarios', 'UsuariosController@index');//->middleware('menu');
+Route::post('/Usuarios/gridUsuarios', 'UsuariosController@gridUsuarios');
+Route::post('/Usuarios/getUsuario', 'UsuariosController@getUsuario');
+Route::post('/Usuarios/saveUsuario', 'UsuariosController@saveUsuario');
+Route::post('/Usuarios/toggleRegistro', 'UsuariosController@toggleRegistro');
+
 Route::get('/Carrusel', 'CarruselController@index');//->middleware('menu');
 Route::get('/QuienesSomos', 'QuienesSomosController@index');//->middleware('menu');
 Route::get('/Servicios', 'ServiciosController@index');//->middleware('menu');
 Route::get('/Beneficios', 'BeneficiosController@index');//->middleware('menu');
 Route::get('/Contacto', 'ContactoController@index');//->middleware('menu');
-
-//Route::get('/Aserfi-cp/', 'Controller@index');//->middleware('menu');
+Route::post('/getInformacion', 'ConfiguracionController@getInformacion');

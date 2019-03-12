@@ -65,7 +65,7 @@
                   <div class="col-lg-6 col-md-10 col-sm-8">
                      <div class="file-field">
                         <div class="z-depth-1-half mb-4">
-                           <img src="{{asset('img/placeholder.jpg')}}" class="img-fluid" alt="example placeholder">
+                           <img id="img_inversion" src="{{asset('img/placeholder.jpg')}}" class="img-fluid" alt="example placeholder">
                         </div>
                         <div class="d-flex justify-content-center">
                            <div class="btn btn-mdb-color btn-rounded float-left">
@@ -103,4 +103,8 @@
       </div>
    </div>
 </main>
+@endsection
+
+@section('JSGenerico')
+<script src="{{asset('js/Dashboard/Beneficios.js')}}"></script>
 @endsection
