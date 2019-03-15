@@ -99,6 +99,8 @@ $(document).ready(function(){
 		$('#gridUsuarios').bootstrapTable('refresh');
 	});
 
+	selectLoad("iIDPerfil", "getSelectPerfiles", 0, 1);
+
 });
 
 /** Formatter **/
@@ -111,7 +113,7 @@ function accionesFormatter(value, row, index) {
 				'<button type="button" data-toggle="tooltip" title="Editar" style="border-radius:30px;" class="btn btn-xs btn-success btn-round" data-original-title onclick="editRegistro(' + row.id + ')">'+
 					'<i class="material-icons" >edit</i>'+
 				'</button>' + '&nbsp;' + '&nbsp;' +
-				'<button type="button" data-toggle="tooltip" title="Eliminar" style="border-radius:30px;" class="btn btn-xs btn-danger btn-round" data-original-title >'+
+				'<button type="button" data-toggle="tooltip" title="Eliminar" style="border-radius:30px;" class="btn btn-xs btn-danger btn-round" data-original-title onclick="toggleRegistro(' + row.id + ')">'+
 					'<i class="material-icons" >delete</i>'+
 				'</button>' + '&nbsp;' + '&nbsp;' +
 	
@@ -137,9 +139,9 @@ function saveRegistro(){
       		$('#gridUsuarios').bootstrapTable('refresh');
       		$('#modalUsuario').modal('hide');
       		swal ( "¡Exito!" ,  "Registro Guardado Exitosamente" ,  "success" )
-      	},error: function(data){
-      		swal ( "Ocurrio un Error" , data.statusText,  "error" )
-      	}
+      	},error: function(e, x, settings, exception){
+      		failGeneric(e, x, settings, exception);
+    	},
     });
 }
 
@@ -153,7 +155,7 @@ function editRegistro(id){
       	data: {
       		"id": id,
       	},
-      	success: function(data){
+      	success: function(data){ 
         	$("#iIDUsuario").val(data.id);
         	$("#cNombre").val(data.name);
         	$("#cPrimerApellido").val(data.primerApellido);
@@ -162,10 +164,28 @@ function editRegistro(id){
         	$("#cCorreoElectronico").val(data.email);
         	$("#iIDPerfil").val(data.perfil_id).trigger("change");
         	$("#formUsuario").valid();
+        	validarInpust();
       	},
-      	error: function(data){
+      	error: function(e, x, settings, exception){
+      		failGeneric(e, x, settings, exception);
+    	},
+    });
+}
 
-    	}
+function toggleRegistro(id){
+	$.ajax({
+      	url: 'Usuarios/toggleRegistro',
+      	type: 'post',
+      	dataType: "json",
+      	data: {
+      		id: id,
+    	},
+      	success: function(data){
+      		$('#gridUsuarios').bootstrapTable('refresh');
+      		swal ( "¡Éxito!" ,  "Se Desactivo Exitosamente" ,  "success" )
+      	},error: function(e, x, settings, exception){
+      		failGeneric(e, x, settings, exception);
+    	},
     });
 }
 
@@ -194,4 +214,29 @@ function cleanForm(){
     $("#cPass").show();
     $("#cCorreoElectronico").show();
     $("#iIDPerfil").show();
+
+    validarInpustInvers();
+}
+
+
+function validarInpust(){
+    $("#cNombre").removeClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cNombre").addClass("mui--is-dirty mui--is-not-empty mui--is-touched");
+    $("#cPrimerApellido").removeClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cPrimerApellido").addClass("mui--is-dirty mui--is-not-empty mui--is-touched");
+    $("#cSegundoApellido").removeClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cSegundoApellido").addClass("mui--is-dirty mui--is-not-empty mui--is-touched");
+    $("#cCorreoElectronico").removeClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cCorreoElectronico").addClass("mui--is-dirty mui--is-not-empty mui--is-touched");
+}
+
+function validarInpustInvers(){
+    $("#cNombre").addClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cNombre").removeClass("mui--is-dirty mui--is-not-empty mui--is-touched");
+    $("#cPrimerApellido").addClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cPrimerApellido").removeClass("mui--is-dirty mui--is-not-empty mui--is-touched");
+    $("#cSegundoApellido").addClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cSegundoApellido").removeClass("mui--is-dirty mui--is-not-empty mui--is-touched");
+    $("#cCorreoElectronico").addClass("mui--is-empty mui--is-pristine mui--is-touched");
+    $("#cCorreoElectronico").removeClass("mui--is-dirty mui--is-not-empty mui--is-touched");
 }

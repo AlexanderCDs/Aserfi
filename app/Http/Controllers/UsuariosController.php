@@ -25,7 +25,7 @@ class UsuariosController extends Controller
             $usuario = User::selectRaw('users.id, CONCAT( users.name, " ", users.primerApellido, " ", IFNULL(users.segundoApellido, ""))  as nombre, perfiles.perfil, users.activo, users.email')->whereRaw($filtro)->leftJoin('perfiles', 'users.perfil_id', '=', 'perfiles.id')->get();
             
         }else{
-            $usuario = User::selectRaw('users.id, CONCAT( users.name, " ", users.primerApellido, " ", IFNULL(users.segundoApellido, "")) as nombre, perfiles.perfil, users.activo, users.email')->whereRaw("users.id != 1")->leftJoin('perfiles', 'users.perfil_id', '=', 'perfiles.id')->get();
+            $usuario = User::selectRaw('users.id, CONCAT( users.name, " ", users.primerApellido, " ", IFNULL(users.segundoApellido, "")) as nombre, perfiles.perfil, users.activo, users.email')->whereRaw("users.activo = 1 and users.id != 1 ")->leftJoin('perfiles', 'users.perfil_id', '=', 'perfiles.id')->get();
         }
         return Response()->json($usuario);
     }
@@ -36,7 +36,7 @@ class UsuariosController extends Controller
             $value = strtoupper(trim($request->cUsuario));
             $value = "'%" . $value . "%'";
             $nameC = 'CONCAT( users.name, " ", users.primerApellido, " ", IFNULL(users.segundoApellido, ""))';
-            $filtro = "users.id != 1 and UPPER(". $nameC .") like " . $value;
+            $filtro = "users.activo = 1 and users.id != 1 and UPPER(". $nameC .") like " . $value;
         }
         return $filtro;
     }

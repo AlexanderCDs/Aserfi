@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 
 Route::resource('/Aserfi-cp', 'InicioSesionController');
+Route::post('/iniciarSesion', 'InicioSesionController@iniciarSesion');
+Route::get('/cerrarSesion', 'InicioSesionController@cerrarSesion');
 
 Route::get('/Usuarios', 'UsuariosController@index');//->middleware('menu');
 Route::post('/Usuarios/gridUsuarios', 'UsuariosController@gridUsuarios');
@@ -29,3 +31,13 @@ Route::get('/Servicios', 'ServiciosController@index');//->middleware('menu');
 Route::get('/Beneficios', 'BeneficiosController@index');//->middleware('menu');
 Route::get('/Contacto', 'ContactoController@index');//->middleware('menu');
 Route::post('/getInformacion', 'ConfiguracionController@getInformacion');
+Route::post('/saveInformacion', 'ConfiguracionController@saveInformacion');
+Route::post('/saveInformacionWithImg', 'ConfiguracionController@saveInformacionWithImg');
+Route::post('/saveInformacionWithImg2', 'ConfiguracionController@saveInformacionWithImg2');
+Route::post('/saveImg', 'ConfiguracionController@saveImg');
+Route::post('/saveImg2', 'ConfiguracionController@saveImg2');
+Route::post('/saveImg3', 'ConfiguracionController@saveImg3');
+
+Route::post('/getSelectPerfiles', 'ConfiguracionController@getSelectPerfiles');
+
+

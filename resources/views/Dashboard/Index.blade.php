@@ -37,19 +37,23 @@
                         <img src="{{asset('img/logo_azul.png')}}" class="img-fluid" alt="Responsive image" style="width: 25%">
                         <h1 class="card-title text-center">Aserfi</h1>
                      </div>
-                     <form class="form">
+                     <form class="form" id="formInicioSesion" name="formInicioSesion">
                         <div class="mui-textfield mui-textfield--float-label">
-                           <input type="email" id="inputEmail" name="inputEmail" required autofocus>
+                           <input type="email" id="cCorreoElectronico" name="cCorreoElectronico" required autofocus>
                            <label>Correo Electrónico</label>
                         </div>
+                        <label id="cCorreoElectronico-error" class="error" for="cCorreoElectronico"></label>
+
                         <div class="mui-textfield mui-textfield--float-label">
-                           <input type="password" id="inputPassword" name="inputPassword" required>
+                           <input type="password" id="cPassword" name="cPassword" required>
                            <label>Contraseña</label>
                         </div>
-                        <button class="btn btn-lg btn-primary btn-block text-uppercase" style="background-color: #004B7B">
+                        <label id="password-error" class="error" for="password"></label>
+                        
+                     </form>
+                     <button id="btnInicioSesion" class="btn btn-lg btn-primary btn-block text-uppercase" style="background-color: #004B7B">
                           <i class="material-icons" >fingerprint</i> Iniciar sesión
                         </button>
-                     </form>
                   </div>
                </div>
             </div>
@@ -59,5 +63,15 @@
       <script src="{{asset('css/Page/bootstrap4/popper.js')}}"></script>
       <script src="{{asset('css/Page/bootstrap4/bootstrap.min.js')}}"></script>
       <script src="{{asset('plugins/mui-0.9.41/js/mui.min.js')}}"></script>
+
+        <!-- jquery-validation-1.17.0 -->
+      <script src="{{asset('plugins/jquery-validation-1.17.0/jquery.validate.js')}}"></script>
+      <script src="{{asset('plugins/jquery-validation-1.17.0/jquery.validate.min.js')}}"></script>
+      <script src="{{asset('plugins/jquery-validation-1.17.0/additional-methods.js')}}"></script>
+      <script src="{{asset('plugins/jquery-validation-1.17.0/additional-methods.min.js')}}"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+      <script src="{{asset('js/Dashboard/JSGenerico.js')}}"></script>
+      <script src="{{asset('js/Dashboard/Session.js')}}"></script>
    </body>
 </html>

@@ -10,26 +10,32 @@
    </div>
 </header>
 <main class="mdl-layout__content mdl-color--grey-100">
-   <div class="mdl-grid demo-content row">
+   <div class="mdl-grid demo-content row"> 
       <div class="col-lg-12 col-md-12 col-sm-12 margin-form-contacto card">
          </br>
+         <form class="mui-form" id="formCarrusel" name="formCarrusel">
          <div class="row">
             <div class="col-lg-9 col-md-8 col-sm-8">
                <div class="row">
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveNombreImagen1">
                         <input type="text" id="cNombreImagen1" name="cNombreImagen1">
                         <label>Nombre imagen 1</label>
                      </div>
+                     <label id="cNombreImagen1-error" class="error" for="cNombreImagen1">
+                     </label>
                   </div>
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveTextoFila11">
                         <input type="text" id="cTextoFila11" name="cTextoFila11">
                         <label>Texto fila 1</label>
                      </div>
                   </div>
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveTextoFila21">
                         <input type="text" id="cTextoFila21" name="cTextoFila21">
                         <label>Texto fila 2</label>
                      </div>
@@ -44,9 +50,12 @@
                   <div class="d-flex justify-content-center">
                      <div class="btn btn-mdb-color btn-rounded float-left">
                         <span>Seleccione una imagen</span>
+                        <input type="hidden" value="0" id="claveImagen1">
                         <input type="file" id="fImagen1" name="fImagen1">
                      </div>
                   </div>
+                  <label id="fImagen1-error" class="error" for="fImagen1">
+                  </label>
                </div>
             </div>
 
@@ -55,18 +64,23 @@
                <div class="row">
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveNombreImagen2">
                         <input type="text" id="cNombreImagen2" name="cNombreImagen2">
                         <label>Nombre imagen 2</label>
                      </div>
+                     <label id="cNombreImagen2-error" class="error" for="cNombreImagen2">
+                     </label>
                   </div>
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveTextoFila12">
                         <input type="text" id="cTextoFila12" name="cTextoFila12">
                         <label>Texto fila 1</label>
                      </div>
                   </div>
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveTextoFila22">
                         <input type="text" id="cTextoFila22" name="cTextoFila22">
                         <label>Texto fila 2</label>
                      </div>
@@ -81,9 +95,12 @@
                   <div class="d-flex justify-content-center">
                      <div class="btn btn-mdb-color btn-rounded float-left">
                         <span>Seleccione una imagen</span>
+                        <input type="hidden" value="0" id="claveImagen2">
                         <input type="file" id="fImagen2" name="fImagen2">
                      </div>
                   </div>
+                  <label id="fImagen2-error" class="error" for="fImagen2">
+                  </label>
                </div>
             </div>
 
@@ -92,18 +109,23 @@
                <div class="row">
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveNombreImagen3">
                         <input type="text" id="cNombreImagen3" name="cNombreImagen3">
-                        <label>Nombre imagen 1</label>
+                        <label>Nombre imagen 3</label>
                      </div>
+                     <label id="cNombreImagen3-error" class="error" for="cNombreImagen3">
+                     </label>
                   </div>
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveTextoFila13">
                         <input type="text" id="cTextoFila13" name="cTextoFila13">
                         <label>Texto fila 1</label>
                      </div>
                   </div>
                   <div class="col-lg-12">
                      <div class="mui-textfield mui-textfield--float-label">
+                        <input type="hidden" value="0" id="claveTextoFila23">
                         <input type="text" id="cTextoFila23" name="cTextoFila23">
                         <label>Texto fila 2</label>
                      </div>
@@ -118,9 +140,12 @@
                   <div class="d-flex justify-content-center">
                      <div class="btn btn-mdb-color btn-rounded float-left">
                         <span>Seleccione una imagen</span>
+                        <input type="hidden" value="0" id="claveImagen3">
                         <input type="file" id="fImagen3" name="fImagen3">
                      </div>
                   </div>
+                  <label id="fImagen3-error" class="error" for="fImagen3">
+                  </label>
                </div>
             </div>
 
@@ -130,6 +155,7 @@
                   </button>
                </div>
          </div>
+         </form>
       </div>
    </div>
 </main>

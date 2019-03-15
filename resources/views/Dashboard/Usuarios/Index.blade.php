@@ -60,7 +60,7 @@
                      <label>* Nombre(s):</label>
                   </div>
                   <label id="cNombre-error" class="error" for="cNombre">
-                  	<span class="text-danger"></span>
+                  	
                   </label>
                </div>
                <div class="col-lg-12">
@@ -69,7 +69,7 @@
                      <label>* Primer Apellido</label>
                   </div>
                   <label id="cPrimerApellido-error" class="error" for="cPrimerApellido">
-                  	<span class="text-danger"></span>
+                  	
                   </label>
                </div>
                <div class="col-lg-12">
@@ -80,11 +80,11 @@
                </div>
                <div class="col-lg-12">
                   <div class="mui-textfield mui-textfield--float-label">
-                     <input type="text" id="iIDPerfil" name="iIDPerfil">
-                     <label>* Perfil</label>
+                    <select id="iIDPerfil" name="iIDPerfil" class="form-control" >
+                    </select>
                   </div>
                   <label id="iIDPerfil-error" class="error" for="iIDPerfil">
-                  	<span class="text-danger"></span>
+                  	
                   </label>
                </div>
                <div class="col-lg-12">
@@ -93,7 +93,7 @@
                      <label>* Correo electrónico</label>
                   </div>
                   <label id="cCorreoElectronico-error" class="error" for="cCorreoElectronico">
-                  	<span class="text-danger"></span>
+                  	
                   </label>
                </div>
                <div class="col-lg-12">
@@ -102,7 +102,7 @@
                      <label>* Contraseña</label>
                   </div>
                   <label id="cPass-error" class="error" for="cPass">
-                  	<span class="text-danger"></span>
+                  	
                   </label>
                </div>
             </div>

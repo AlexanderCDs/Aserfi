@@ -471,6 +471,7 @@
   <script src="{{asset('plugins/aos/aos.js')}}"></script>
 
   <script src="{{asset('js/Page/JSGeneric.js')}}"></script>
+  <script src="{{asset('js/Page/Page.js')}}"></script>
 </body>
 
 </html>

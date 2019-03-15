@@ -127,6 +127,7 @@
     <script src="{{asset('plugins/jquery-validation-1.17.0/jquery.validate.min.js')}}"></script>
     <script src="{{asset('plugins/jquery-validation-1.17.0/additional-methods.js')}}"></script>
     <script src="{{asset('plugins/jquery-validation-1.17.0/additional-methods.min.js')}}"></script>
+    <script src="{{asset('js/Dashboard/JSGenerico.js')}}"></script>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
