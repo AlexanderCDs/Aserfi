@@ -14,7 +14,13 @@ class ConfiguracionController extends Controller
     	$value = $request->valor;//"CONTACTO";
     	$informacion = Configuraciones::whereRaw("clave like '".$value."'")->get();
     	return Response()->json($informacion);
-    }
+    } 
+
+    public function getInformacionASC(Request $request){
+        $value = $request->valor;//"CONTACTO";
+        $informacion = Configuraciones::whereRaw("clave like '".$value."'")->orderBy('id', 'asc')->get();
+        return Response()->json($informacion);
+    } 
 
     public function saveInformacion(Request $request){
     	switch ($request->seccion) {
@@ -24,6 +30,7 @@ class ConfiguracionController extends Controller
     		{
     			$newObj = Configuraciones::find($item->id);
     			$newObj->valor = $item->value;
+                $newObj->usuariomodificacion = Auth::user()->name;
     			$newObj->save();
     		}
         	return Response()->json(["success" => true]);
@@ -38,6 +45,7 @@ class ConfiguracionController extends Controller
                 $data = json_decode($request[$i]);
                 $newObj = Configuraciones::find($data->id);
                 $newObj->valor = $data->value;
+                $newObj->usuariomodificacion = Auth::user()->name;
                 $newObj->save();
             }
         }
@@ -50,6 +58,7 @@ class ConfiguracionController extends Controller
                 $data = json_decode($request[$i]);
                 $newObj = Configuraciones::find($data->id);
                 $newObj->valor = $data->value;
+                $newObj->usuariomodificacion = Auth::user()->name;
                 $newObj->save();
             }
         }
@@ -69,6 +78,7 @@ class ConfiguracionController extends Controller
 
         $newObj = Configuraciones::find($request->id);
         $newObj->valor = $filename;
+        $newObj->usuariomodificacion = Auth::user()->name;
         $newObj->save();
 
         return Response()->json(["success" => true]);
@@ -86,6 +96,7 @@ class ConfiguracionController extends Controller
 
         $newObj = Configuraciones::find($request->id);
         $newObj->valor = $filename;
+        $newObj->usuariomodificacion = Auth::user()->name;
         $newObj->save();
 
         return Response()->json(["success" => true]);
@@ -103,6 +114,7 @@ class ConfiguracionController extends Controller
 
         $newObj = Configuraciones::find($request->id);
         $newObj->valor = $filename;
+        $newObj->usuariomodificacion = Auth::user()->name;
         $newObj->save();
 
         return Response()->json(["success" => true]);

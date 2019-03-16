@@ -4,6 +4,13 @@
  * @Company News-it
  */
 var base = window.location.origin;
+$(document).ready(function() {
+	$('#cerraSession').click(function(){
+		location.href = 'cerrarSesion';
+	});
+});
+
+
 
 function selectLoad(select, ruta, id, active){
 	$.ajax({

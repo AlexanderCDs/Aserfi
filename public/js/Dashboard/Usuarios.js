@@ -67,14 +67,14 @@ $(document).ready(function(){
     	rules: {
     		iIDUsuario: { required: true, },
     		cNombre: { required: true, },
-    		cPass: { required: true, },
+    		cPassword: { required: true, },
     		cCorreoElectronico: { required: true, },
     		iIDPerfil: { required: true, },
     		cPrimerApellido: { required: true, },
     	}, messages: {
     		iIDUsuario: { required: '<span class="text-danger">Campo requerido</span>', },
     		cNombre: { required: '<span class="text-danger">Campo requerido</span>', },
-    		cPass: { required: '<span class="text-danger">Campo requerido</span>', },
+    		cPassword: { required: '<span class="text-danger">Campo requerido</span>', },
     		cCorreoElectronico: { required: '<span class="text-danger">Campo requerido</span>', },
     		iIDPerfil: { required: '<span class="text-danger">Campo requerido</span>', },
     		cPrimerApellido: { required: '<span class="text-danger">Campo requerido</span>', }
@@ -83,7 +83,7 @@ $(document).ready(function(){
 
     $('#btnGuardar').click(function(){
         $("#cNombre").val($("#cNombre").val().trim());
-        $("#cPass").val($("#cPass").val());
+        $("#cPassword").val($("#cPassword").val());
         $("#cCorreoElectronico").val($("#cCorreoElectronico").val().trim());
 		if($("#formUsuario").valid()) {
 			saveRegistro();
@@ -133,7 +133,7 @@ function saveRegistro(){
     		cSegundoApellido: $("#cSegundoApellido").val(),
     		iIDPerfil: $("#iIDPerfil").val(),
     		cCorreoElectronico: $("#cCorreoElectronico").val(),
-    		cPass: $("#cPass").val(),
+    		cPassword: $("#cPassword").val(),
     	},
       	success: function(data){
       		$('#gridUsuarios').bootstrapTable('refresh');
@@ -160,7 +160,7 @@ function editRegistro(id){
         	$("#cNombre").val(data.name);
         	$("#cPrimerApellido").val(data.primerApellido);
         	$("#cSegundoApellido").val(data.segundoApellido);
-        	$("#cPass").val(data.password)
+        	$("#cPassword").val(data.password)
         	$("#cCorreoElectronico").val(data.email);
         	$("#iIDPerfil").val(data.perfil_id).trigger("change");
         	$("#formUsuario").valid();
@@ -195,14 +195,14 @@ function cleanForm(){
     $("#cNombre").val('');
     $("#cPrimerApellido").val('');
     $("#cSegundoApellido").val('');
-    $("#cPass").val('');
+    $("#cPassword").val('');
     $("#cCorreoElectronico").val('');
     $("#iIDPerfil").val(0).trigger("change");
 
     $("#cNombre").hide();
     $("#cPrimerApellido").hide();
     $("#cSegundoApellido").hide();
-    $("#cPass").hide();
+    $("#cPassword").hide();
     $("#cCorreoElectronico").hide();
     $("#iIDPerfil").hide();
 
@@ -211,7 +211,7 @@ function cleanForm(){
     $("#cNombre").show();
     $("#cPrimerApellido").show();
     $("#cSegundoApellido").show();
-    $("#cPass").show();
+    $("#cPassword").show();
     $("#cCorreoElectronico").show();
     $("#iIDPerfil").show();
 

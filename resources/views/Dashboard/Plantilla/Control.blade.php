@@ -57,19 +57,19 @@
 
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
-          <img src="{{asset('img/logo.png')}}" class="demo-avatar">
+          <img src="{{asset('img/logo.png')}}" class="demo-avatar"> {{{ Auth::user()->name}}}
           <div class="demo-avatar-dropdown">
-            <span>hello@example.com</span>
+            <span>{{{ Auth::user()->email}}}</span>
             <div class="mdl-layout-spacer"></div>
             <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
               <i class="material-icons" role="presentation">arrow_drop_down</i>
               <span class="visuallyhidden">Accounts</span>
             </button>
             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-              <li class="mdl-menu__item">
+              <!--<li class="mdl-menu__item">
                 <i class="material-icons">settings</i> Configuración
-              </li>
-              <li class="mdl-menu__item">
+              </li>-->
+              <li class="mdl-menu__item" id="cerraSession">
                 <i class="material-icons">power_settings_new</i> Cerrar sesión
               </li>
               <!--<li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>-->
@@ -77,37 +77,13 @@
           </div>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <!--<a class="mdl-navigation__link" href="">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i> Inicio
-          </a>
-          <a class="mdl-navigation__link" href="">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i> Modulos
-          </a>
-          <a class="mdl-navigation__link" href="">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i> Permisos
-          </a>-->
-          <a class="mdl-navigation__link" href="/Usuarios">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">person</i> Usuarios
-          </a>
-          <a class="mdl-navigation__link" href="/Carrusel">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">view_carousel</i> Carrusel
-          </a>
-          <a class="mdl-navigation__link" href="/QuienesSomos">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help</i> Quiénes somos
-          </a>
-          <a class="mdl-navigation__link" href="/Servicios">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">room_service</i> Servicios
-          </a>
-          <a class="mdl-navigation__link" href="/Beneficios">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">trending_up</i> Beneficios
-          </a>
-          <a class="mdl-navigation__link" href="/Contacto">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i> Contacto
-          </a>
-          <div class="mdl-layout-spacer"></div>
-          <!--<a class="mdl-navigation__link" href="">
-            <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span>
-          </a>-->
+          @foreach (Request::get('menu') as $item)
+            <a class="mdl-navigation__link" href="{{ $item->ruta }}">
+              <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">{{ $item->icono }}</i> {{ $item->text }}
+            </a>
+          @endforeach
+
+          
         </nav>
       </div>
 

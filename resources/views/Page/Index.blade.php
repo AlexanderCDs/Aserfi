@@ -84,25 +84,30 @@
 	  				</ol>
   					<div class="carousel-inner carousel-inner-index">
     					<div class="carousel-item active">
-      						<img class="d-block w-100" src="{{asset('img/slider/Banner_1_Seccion1.png')}}" alt="First slide">
+      						<img id="s1" class="d-block w-100" src="{{asset('img/slider/Banner_1_Seccion1.png')}}" alt="First slide">
       						<div class="carousel-caption center-text-carousel">
-                    <h1 class="bounceIn animated h1-class">LA SITUACIÓN DEL MERCADO</h5>
-                    <h1 class="bounceIn animated h1-class"><b>A TU FAVOR</b></h5>
+                    <h1 id="ht11" class="bounceIn animated h1-class">LA SITUACIÓN DEL MERCADO</h5>
+                    <h1 id="ht21" class="bounceIn animated h1-class"><b>A TU FAVOR</b></h5>
                     <p></p>
                   </div>
     					</div>
               <div class="carousel-item ">
-                  <img class="d-block w-100" src="{{asset('img/slider/Banner_2_Seccion1.png')}}" alt="First slide">
-                  
+                  <img id="s2" class="d-block w-100" src="{{asset('img/slider/Banner_1_Seccion1.png')}}" alt="First slide">
+                  <div class="carousel-caption center-text-carousel">
+                    <h1 id="ht12" class="bounceIn animated h1-class">LA SITUACIÓN DEL MERCADO</h5>
+                    <h1 id="ht22" class="bounceIn animated h1-class"><b>A TU FAVOR</b></h5>
+                    <p></p>
+                  </div>
               </div>
               <div class="carousel-item ">
-                  <img class="d-block w-100" src="{{asset('img/slider/Banner_3_Seccion1.png')}}" alt="First slide">
+                  <img id="s3" class="d-block w-100" src="{{asset('img/slider/Banner_1_Seccion1.png')}}" alt="First slide">
+                  <div class="carousel-caption center-text-carousel">
+                    <h1 id="ht13" class="bounceIn animated h1-class">LA SITUACIÓN DEL MERCADO</h5>
+                    <h1 id="ht23" class="bounceIn animated h1-class"><b>A TU FAVOR</b></h5>
+                    <p></p>
+                  </div>
                   
               </div>
-              <!--<div class="carousel-item ">
-                  <img class="d-block w-100" src="{{asset('img/slider/Banner_4_Seccion1.png')}}" alt="First slide">
-                  
-              </div>-->
   					</div>
 	  				<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
     					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,7 +138,7 @@
 				<div class="row">
           <div class="col-lg-1"> </div>
           <div class="col-lg-10">
-            <p class="p-quienes">
+            <p id="p" class="p-quienes">
               Somos una firma de profesionales especializados en el sector financiero, nuestro modelo de negocios se basa en capitalizar la competencia entre instituciones bancarias, para obtener las condiciones más rentables para nuestros clientes, así como los mejores tiempos de respuesta posibles.
             </p>
           </div>
@@ -148,18 +153,18 @@
                   <div id="indicators" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="{{asset('img/fundadores/fundador_slider01.png')}}" alt="First slide">
+                        <img id="f1" class="d-block w-100" src="{{asset('img/fundadores/fundador_slider01.png')}}" alt="First slide">
                         <div class="carousel-caption carousel-caption-fundadores">
-                          <h2><b>Fernando González de Salceda Urbina</b></h2>
-                          <p class="h4">Egresado de la Universidad de la Iberoamericana en Administración de Empresas con Maestría en Finanzas en el ITAM. Con 36 años de experiencia en el sector financiero.</p>
+                          <h2><b id="t1">Fernando González de Salceda Urbina</b></h2>
+                          <p id="p1" class="h4">Egresado de la Universidad de la Iberoamericana en Administración de Empresas con Maestría en Finanzas en el ITAM. Con 36 años de experiencia en el sector financiero.</p>
                         </div>
                       </div>
 
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="{{asset('img/fundadores/fundador_slider02.png')}}" alt="First slide">
+                        <img id="f2" class="d-block w-100" src="{{asset('img/fundadores/fundador_slider02.png')}}" alt="First slide">
                         <div class="carousel-caption carousel-caption-fundadores">
-                          <h2><b>Fernando González de Salceda Heshem</b></h2>
-                          <p class="h4">Egresado del Tecnológico de monterrey Campus Monterrey de la carrera de Ingeniería industrial con certificación en figura 3 de la Asociación Mexicana de Intermediario Bursátiles</p>
+                          <h2><b id="t2">Fernando González de Salceda Heshem</b></h2>
+                          <p id="p2" class="h4">Egresado del Tecnológico de monterrey Campus Monterrey de la carrera de Ingeniería industrial con certificación en figura 3 de la Asociación Mexicana de Intermediario Bursátiles</p>
                         </div>
                       </div>
                     </div>
@@ -220,23 +225,26 @@
           <div class="col-lg-1"> </div>
           <div class="col-lg-5" >
             <h1 class="h1-servivios h1-smt"><b>Financiamiento</b></h1>
-            <p class="p-servivios">Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
+            <p id="pServivios" class="p-servivios">Nos encargamos de la elaboración y estructuración de proyectos de inversión para conseguir las mejores condiciones crediticias de acuerdo al mercado actual</p>
           </div>
           <div class="col-lg-5">
-            <p class="p-graficas">
-              ELABORACIÓN DE PROYECTOS DE INVERSIÓN
+            <p >
+              <p id="pSGrafia1" class="p-graficas">
+              ELABORACIÓN DE PROYECTOS DE INVERSIÓN</p>
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>   
             </p>
             <p>
-              CRÉDITOS A LA MEDIDA
+              <p id="pSGrafia2" class="p-graficas">
+              CRÉDITOS A LA MEDIDA</p>
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div> 
             </p>
             <p>
-              MEJORA DE CONDICIONES
+              <p id="pSGrafia3" class="p-graficas">
+              MEJORA DE CONDICIONES</p>
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated progress-aserfi" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div> 
@@ -249,7 +257,7 @@
           <div class="col-lg-1"> </div>
           <div class="col-lg-5">
             <h1 class="h1-servivios"><b>Inversiones</b></h1>
-            <p class="p-servivios">Instrumentos y búsqueda de socios inversionistas</p>
+            <p id="pSInversiones" class="p-servivios">Instrumentos y búsqueda de socios inversionistas</p>
           </div>
           <div class="col-lg-5">
             <img class="d-block w-100 img-inversiones" style="width: 75%" src="{{asset('img/servicios/imagen-01.PNG')}}" alt="image1">
@@ -261,7 +269,7 @@
           <div class="col-lg-1"> </div>
           <div class="col-lg-5">
             <h1 class="h1-servivios"><b>Patrimonio</b></h1>
-            <p class="p-servivios">Trabajamos como consejeros y coach financieros</p>
+            <p id="pSPatrimonio" class="p-servivios">Trabajamos como consejeros y coach financieros</p>
           </div>
           <div class="col-lg-5" style="padding-top: 50px;" >
             <img class="d-block w-100" style="width: 75%" src="{{asset('img/servicios/imagen-02.PNG')}}" alt="imagen2">
@@ -300,7 +308,7 @@
 						
 						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md">
-								<div class="col-lg-12 arrow-center">
+								<div id="divFlecha1" class="col-lg-12 arrow-center">
 									AHORROS EN TIEMPO DE RESPUESTA
 								</div>
 							</div>
@@ -308,7 +316,7 @@
 						</div>
 						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #284778 !important; width: 63% !important;">
-								<div class="col-lg-12 arrow-center">
+								<div id="divFlecha2" class="col-lg-12 arrow-center">
 									ELABORACIÓN DE PROYECTOS A LA MEDIDA
 								</div>
 							</div>
@@ -316,7 +324,7 @@
 						</div>
 						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #284778 !important; width: 67% !important;">
-								<div class="col-lg-12 arrow-center">
+								<div id="divFlecha3" class="col-lg-12 arrow-center">
 									SELECCIÓN DE INSTITUCIÓN ESPECIALIZADA
 									</div>
 								</div>
@@ -324,7 +332,7 @@
 						</div>
 						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #4275B1 !important; width: 75% !important;">
-								<div class="col-lg-12 arrow-center">
+								<div id="divFlecha4" class="col-lg-12 arrow-center">
 									MEJORA DE TÉRMINOS Y CONDICIONES
 								</div>
 							</div>
@@ -332,7 +340,7 @@
 						</div>
 						<div class="row hover-title fadeInLeft animated">
 							<div class="rectangle-md" style="background-color: #4E74B1 !important; width: 70% !important;">
-								<div class="col-lg-12 arrow-center">
+								<div id="divFlecha5" class="col-lg-12 arrow-center">
 									MITIGACIÓN DE RIESGOS
 								</div>
 							</div>
@@ -345,7 +353,7 @@
             <div class="row fadeInLeft animated">
               <div class="col-lg-2"></div>
               <div class="col-lg-8">
-                <img class="d-block w-100" src="{{asset('img/beneficios/inversiones.png')}}" alt="First slide">
+                <img id="fInversion" class="d-block w-100" src="{{asset('img/beneficios/inversiones.png')}}" alt="Inversiones Aserfi">
               </div>
               <div class="col-lg-2"></div>
             </div>
@@ -353,14 +361,14 @@
   				<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
 						<div class="row hover-title fadeInLeft animated">
               <div class="rectangle-md" style="background-color: #284778 !important; width: 50% !important;">
-                <div class="col-lg-12 arrow-center">
+                <div id="divBarra1" class="col-lg-12 arrow-center">
                   ASESORAMIENTO
                 </div>
               </div>
             </div>
             <div class="row hover-title fadeInLeft animated">
               <div class="rectangle-md" style="background-color: #4275B1 !important; width: 60% !important;">
-                <div class="col-lg-12 arrow-center">
+                <div id="divBarra2" class="col-lg-12 arrow-center">
                   DIVERSIFICACIÓN
                 </div>
               </div>
@@ -368,7 +376,7 @@
             </div>
             <div class="row hover-title fadeInLeft animated">
               <div class="rectangle-md" style="background-color: #4E74B1 !important; width: 70% !important;">
-                <div class="col-lg-12 arrow-center">
+                <div id="divBarra3" class="col-lg-12 arrow-center">
                   RENTABILIDAD  
                 </div>
                 </div>
@@ -396,7 +404,7 @@
 				<div class="row">
 					<div class="col-lg-1"></div>
 					<div class="col-lg-5 margin-form-contacto card">
-						<form class="mui-form">
+						<form class="mui-form" action="mailto:contacto@lineadecodigo.com">
                 <legend style="margin-left: 10px;"><b>CONTACTO</b></legend>
                
                 <div class="mui-textfield mui-textfield--float-label">
@@ -417,9 +425,9 @@
                 </div>
 
   							<div class="">
-  								<a href="#" class="btn btn-success btn-aserfi">
+  								<button href="#" class="btn btn-success btn-aserfi">
   									Enviar
-  								</a>
+  								</button>
   							</div>
   						</form>
 					</div>
@@ -428,24 +436,25 @@
     	  					<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-map-marker-alt"></i>
     	  					</a>
-        					<span style="margin-left: 15px;">C. 16 No. 61A x 3 y 5 C.P. 97139</span>
-        					<ol style="margin-left: 20px;">
-        						 San Antonio Cinta. Mérida, Yucatán.
-        					</ol>
+        					<span id="" style="margin-left: 15px;">
+                    <ol id="contacto1" style="margin-left: 20px; margin-top: -32px;">
+                     San Antonio Cinta. Mérida, Yucatán.
+                  </ol></span>
+        					
       						
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-phone"></i>
     	  					</a>
-        					<span style="margin-left: 15px;">(999) 422 5312</span>
+        					<span id="contacto2" style="margin-left: 15px;">(999) 422 5312</span>
         					
-        					<ol style="margin-left: 20px;">
+        					<ol id="contacto3" style="margin-left: 20px;">
         						(999) 322 8638
         					</ol>
 
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-envelope"></i>
     	  					</a>
-        					<span style="margin-left: 15px;">fgonzalez@aserfi.mx</span>
+        					<span id="contacto4" style="margin-left: 15px;">fgonzalez@aserfi.mx</span>
         					
     	  				</ul>
 					</div>
@@ -469,7 +478,7 @@
   
   <script src="{{asset('plugins/mui-0.9.41/js/mui.min.js')}}"></script>
   <script src="{{asset('plugins/aos/aos.js')}}"></script>
-
+  <script src="{{asset('js/Dashboard/JSGenerico.js')}}"></script>
   <script src="{{asset('js/Page/JSGeneric.js')}}"></script>
   <script src="{{asset('js/Page/Page.js')}}"></script>
 </body>

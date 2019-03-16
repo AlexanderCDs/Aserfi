@@ -25,14 +25,14 @@ class MenuMiddleware
             $request->attributes->add(['menu' => $menu]);
             return $next($request);
         }else{
-            return redirect('/');
+            return redirect('/Aserfi-cp');
         }
     }
 
 
     public function getTreeGijgo($iIDPerfil)
     {
-        $modulos = Modulos::selectRaw('id, nombre as text, menu, ruta, icono')->whereRaw("activo is true and modulopadre_id = 0")->orderBy('posicion', 'asc')->get();
+        $modulos = Modulos::selectRaw('id, nombre as text, menu, ruta, icono')->whereRaw("activo is true and menu = 0" )->orderBy('posicion', 'asc')->get();
         foreach ($modulos as $modulo) {
             if($this->havePermiso($modulo->id, $iIDPerfil)){
                 $modulo->checkedFieldName = false;

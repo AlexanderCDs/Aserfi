@@ -54,8 +54,8 @@ class UsuariosController extends Controller
                 'segundoApellido' => $request->cSegundoApellido,
                 'email' => $request->cCorreoElectronico, 
                 'password' => bcrypt($request->cPassword),
-                'usuarioalta' => "Auth::user()->name" , 
-                'usuariomodificacion' => "Auth::user()->name", 
+                'usuarioalta' => Auth::user()->name , 
+                'usuariomodificacion' => Auth::user()->name, 
                 'activo' => 1]);
         }else{
             $usuario = User::find($request->iIDUsuario);
@@ -65,7 +65,7 @@ class UsuariosController extends Controller
             $usuario->segundoApellido = $request->cSegundoApellido;
             $usuario->email = $request->cCorreoElectronico; 
             $usuario->password = bcrypt($request->cPassword);
-            $usuario->usuariomodificacion = "Auth::user()->name";
+            $usuario->usuariomodificacion = Auth::user()->name;
             $usuario->save();
         }
         return Response()->json($usuario);

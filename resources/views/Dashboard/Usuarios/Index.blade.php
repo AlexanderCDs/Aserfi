@@ -98,10 +98,10 @@
                </div>
                <div class="col-lg-12">
                   <div class="mui-textfield mui-textfield--float-label">
-                     <input type="text" id="cPass" name="cPass">
+                     <input type="text" id="cPassword" name="cPassword">
                      <label>* Contraseña</label>
                   </div>
-                  <label id="cPass-error" class="error" for="cPass">
+                  <label id="cPassword-error" class="error" for="cPassword">
                   	
                   </label>
                </div>
