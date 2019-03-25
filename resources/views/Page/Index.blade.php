@@ -144,9 +144,12 @@
           </div>
           <div class="col-lg-1"> </div>
 				</div>
-        <div class="row" style="padding-top: 40px">
-          <div class="col-lg-2"> </div>
-          <div class="col-lg-8">
+       
+			</div>
+		</div>
+     <div class="row" style="padding-top: 40px">
+          <div class="col-lg-3"> </div>
+          <div class="col-lg-6">
             <div id="fundadores">
               <div class="col-lg-12">
                 <div class="">
@@ -156,7 +159,7 @@
                         <img id="f1" class="d-block w-100" src="{{asset('img/fundadores/fundador_slider01.png')}}" alt="First slide">
                         <div class="carousel-caption carousel-caption-fundadores">
                           <h2><b id="t1">Fernando González de Salceda Urbina</b></h2>
-                          <p id="p1" class="h4">Egresado de la Universidad de la Iberoamericana en Administración de Empresas con Maestría en Finanzas en el ITAM. Con 36 años de experiencia en el sector financiero.</p>
+                          <p id="p1" >Egresado de la Universidad de la Iberoamericana en Administración de Empresas con Maestría en Finanzas en el ITAM. Con 36 años de experiencia en el sector financiero.</p>
                         </div>
                       </div>
 
@@ -164,16 +167,16 @@
                         <img id="f2" class="d-block w-100" src="{{asset('img/fundadores/fundador_slider02.png')}}" alt="First slide">
                         <div class="carousel-caption carousel-caption-fundadores">
                           <h2><b id="t2">Fernando González de Salceda Heshem</b></h2>
-                          <p id="p2" class="h4">Egresado del Tecnológico de monterrey Campus Monterrey de la carrera de Ingeniería industrial con certificación en figura 3 de la Asociación Mexicana de Intermediario Bursátiles</p>
+                          <p id="p2" >Egresado del Tecnológico de monterrey Campus Monterrey de la carrera de Ingeniería industrial con certificación en figura 3 de la Asociación Mexicana de Intermediario Bursátiles</p>
                         </div>
                       </div>
                     </div>
 
-                    <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev carousel-control-prev-qs" href="#indicators" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon carousel-control-prev-icon-fundadores" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+                    <a class="carousel-control-next carousel-control-next-qs" href="#indicators" role="button" data-slide="next">
                       <span class="carousel-control-next-icon carousel-control-next-icon-fundadores" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -183,10 +186,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2"> </div>
+          <div class="col-lg-3"> </div>
         </div>
-			</div>
-		</div>
 	</div>
 
     <!-- Quienes Somos -->
@@ -360,14 +361,14 @@
 					</div>
   				<div class="tab-pane" id="patrimonio" role="tabpanel" aria-labelledby="patrimonio-tab">
 						<div class="row hover-title fadeInLeft animated">
-              <div class="rectangle-md" style="background-color: #284778 !important; width: 50% !important;">
+              <div class="rectangle-cute-md" style="background-color: #284778 !important; width: 50% !important;">
                 <div id="divBarra1" class="col-lg-12 arrow-center">
                   ASESORAMIENTO
                 </div>
               </div>
             </div>
             <div class="row hover-title fadeInLeft animated">
-              <div class="rectangle-md" style="background-color: #4275B1 !important; width: 60% !important;">
+              <div class="rectangle-cute-md" style="background-color: #4275B1 !important; width: 60% !important;">
                 <div id="divBarra2" class="col-lg-12 arrow-center">
                   DIVERSIFICACIÓN
                 </div>
@@ -375,7 +376,7 @@
               
             </div>
             <div class="row hover-title fadeInLeft animated">
-              <div class="rectangle-md" style="background-color: #4E74B1 !important; width: 70% !important;">
+              <div class="rectangle-cute-md" style="background-color: #4E74B1 !important; width: 70% !important;">
                 <div id="divBarra3" class="col-lg-12 arrow-center">
                   RENTABILIDAD  
                 </div>
@@ -404,7 +405,7 @@
 				<div class="row">
 					<div class="col-lg-1"></div>
 					<div class="col-lg-5 margin-form-contacto card">
-						<form class="mui-form" action="mailto:contacto@lineadecodigo.com">
+						<form class="mui-form">
                 <legend style="margin-left: 10px;"><b>CONTACTO</b></legend>
                
                 <div class="mui-textfield mui-textfield--float-label">
@@ -437,7 +438,7 @@
     	  						<i class="fas fa-map-marker-alt"></i>
     	  					</a>
         					<span id="" style="margin-left: 15px;">
-                    <ol id="contacto1" style="margin-left: 20px; margin-top: -32px;">
+                    <ol id="contacto1" class="size-text" style="margin-left: 20px; margin-top: -32px;">
                      San Antonio Cinta. Mérida, Yucatán.
                   </ol></span>
         					
@@ -445,16 +446,16 @@
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-phone"></i>
     	  					</a>
-        					<span id="contacto2" style="margin-left: 15px;">(999) 422 5312</span>
+        					<span class="size-text" id="contacto2" style="margin-left: 15px;">(999) 422 5312</span>
         					
-        					<ol id="contacto3" style="margin-left: 20px;">
+        					<ol class="size-text" id="contacto3" style="margin-left: 20px;">
         						(999) 322 8638
         					</ol>
 
       						<a href="#" class="btn btn-success btn-aserfi btn-round">
     	  						<i class="fas fa-envelope"></i>
     	  					</a>
-        					<span id="contacto4" style="margin-left: 15px;">fgonzalez@aserfi.mx</span>
+        					<span class="size-text" id="contacto4" style="margin-left: 15px;">fgonzalez@aserfi.mx</span>
         					
     	  				</ul>
 					</div>
@@ -474,7 +475,7 @@
 	<script src="{{asset('css/Page/bootstrap4/bootstrap.min.js')}}"></script>
 	<script src="{{asset('js/Page/moment/moment.js')}}"></script>
 	<script src="{{asset('js/Page/moment/moment-with-locales.js')}}"></script>
-	<script src="{{asset('js/Page/chart-2.7.3/chart.js')}}"></script>
+	
   
   <script src="{{asset('plugins/mui-0.9.41/js/mui.min.js')}}"></script>
   <script src="{{asset('plugins/aos/aos.js')}}"></script>

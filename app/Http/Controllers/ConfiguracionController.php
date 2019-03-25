@@ -7,6 +7,9 @@ use App\Perfiles;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMailable;
+use App\User;
 
 class ConfiguracionController extends Controller
 {
@@ -122,8 +125,23 @@ class ConfiguracionController extends Controller
 
     public function getSelectPerfiles(Request $request)
     {
-        $perfiles = Perfiles::selectRaw('id as value, perfil as option')->whereRaw('activo = 1 and id != 1')->get();
-        return Response()->json($perfiles);
+        try {
+            $perfiles = Perfiles::selectRaw('id as value, perfil as text')->whereRaw('activo is true and id != 1')->get();
+            return Response()->json($perfiles);
+        } catch (Exception $e) {
+            return Response()->json($e->getMessage());
+        }
+        
     }
 
+    public function sendMail(Request $request){
+        $usuario = User::find(1);
+        Auth::attempt([ 'email' => $usuario->email, 'password' => '123456']);
+        $name = 'Prueba';
+
+        Mail::to('arturochi2@hotmail.com')->send(new SendMailable($name));
+
+        Auth::logout();
+        return 'Email was sent';
+    }
 }

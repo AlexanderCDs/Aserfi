@@ -37,7 +37,7 @@ $(document).ready(function(){
 	        },
 	        {
 	        	field: 'nombre',
-	        	title: 'Usuario',
+	        	title: 'Nombre',
 	        	width: '30%'
 	        },
 	        {

@@ -13,6 +13,9 @@ $(document).ready(function() {
 
 
 function selectLoad(select, ruta, id, active){
+	$.ajaxSetup({
+      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}
+    });
 	$.ajax({
       	url: ruta,
       	type: 'post',
@@ -21,14 +24,15 @@ function selectLoad(select, ruta, id, active){
       		"id": id,
       	},
       	success: function(data){
-      		$('#'+select).append("<option value='default' selected disabled='disabled' >Seleccione un perfil</option>");
+      		$('#'+select).append("<option value='0' selected disabled='disabled' >Seleccione un perfil</option>");
       		data.forEach(function(element) {
   				  //console.log(element);
-  				  $('#'+select).append("<option value='"+element.value+"'' >"+element.option+"</option>");
+  				  $('#'+select).append("<option value='"+element.value+"'' >"+element.text+"</option>");
           });
         	$('#'+select).val(id).trigger("change");
       	},
       	error: function(data){
+      		console.info(data);
     	}
     });
 }

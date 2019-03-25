@@ -113,6 +113,18 @@ div{
 	margin-top: 15px;
 }
 
+.rectangle-cute-md {
+	background-color: #152C50;
+	color: #FFF;
+	width: 70%;
+	height: 40px;
+	margin-top: 15px;
+	border-right: 40px solid #fff;
+  	border-bottom: 40px solid transparent;
+}
+
+
+
 
 .arrow-center {
 	margin-top: 5px;
@@ -423,7 +435,7 @@ div{
 /* Fundadores */
 .carousel-caption-fundadores{
 	/*background-color: rgb(0, 72, 119, 0.3);*/
-	padding: 15px;
+	padding: 0px;
 	text-align: left;/*justify;*/
 	color: #000;
 	right: 10%;
@@ -552,6 +564,13 @@ div{
 }
 
 
+.carousel-control-next-qs {
+   	right: -45px;
+}
+
+.carousel-control-prev-qs {
+   	left: -45px;
+}
 
 @media screen and (min-width: 100px) and (max-width: 550px) {
 
@@ -636,7 +655,25 @@ div{
 		padding: 15px;
 		margin: 15px;
 	}
+	
+	#btn-play {
+	    cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
 
+
+    #t1, #t2{
+		font-size: 16px;
+	}
+
+	#p1, #p2{
+		font-size: 14px;
+	}
 }
 
 @media screen and (min-width: 550px) and (max-width: 850px) {
@@ -721,6 +758,18 @@ div{
 	.margin-form-contacto {
 		padding: 15px;
 		margin: 15px;
+	}
+	
+	.size-text{
+	    font-size: 20px;
+	}
+
+	#t1, #t2{
+		font-size: 18px;
+	}
+
+	#p1, #p2{
+		font-size: 16px;
 	}
 
 }
@@ -807,6 +856,18 @@ div{
 	.margin-form-contacto {
 		padding: 15px;
 		margin: 15px;
+	}
+	
+	.size-text{
+	    font-size: 20px;
+	}
+
+	#t1, #t2{
+		font-size: 20px;
+	}
+
+	#p1, #p2{
+		font-size: 18px;
 	}
 
 }
@@ -900,6 +961,18 @@ div{
 	.margin-form-contacto {
 		padding: 15px;
 		margin: 15px;
+	}
+	
+	.size-text{
+	    font-size: 20px;
+	}
+
+	#t1, #t2{
+		font-size: 22px;
+	}
+
+	#p1, #p2{
+		font-size: 20px;
 	}
 
 }

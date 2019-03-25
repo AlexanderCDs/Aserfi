@@ -26,7 +26,7 @@
                   <div class="mui-textfield mui-textfield--float-label">
                      <input type="hidden" value="0" id="claveTel1">
                      <input type="text" id="cTel1" name="cTel2">
-                     <label>Telefono 1</label>
+                     <label>Teléfono 1</label>
                   </div>
                   <label id="cTel1-error" class="error" for="cTel1">
                      <span class="text-danger"></span>
@@ -36,7 +36,7 @@
                   <div class="mui-textfield mui-textfield--float-label">
                      <input type="hidden" value="0" id="claveTel2">
                      <input type="text" id="cTel2" name="cTel2">
-                     <label>Telefono 2</label>
+                     <label>Teléfono 2</label>
                   </div>
                   <label id="cTel2-error" class="error" for="cTel2">
                      <span class="text-danger"></span>
