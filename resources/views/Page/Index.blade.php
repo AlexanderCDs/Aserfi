@@ -147,7 +147,7 @@
        
 			</div>
 		</div>
-     <div class="row" style="padding-top: 40px">
+     <div class="row row-qs" style="padding-top: 40px">
           <div class="col-lg-3"> </div>
           <div class="col-lg-6">
             <div id="fundadores">
@@ -158,7 +158,7 @@
                       <div class="carousel-item active">
                         <img id="f1" class="d-block w-100" src="{{asset('img/fundadores/fundador_slider01.png')}}" alt="First slide">
                         <div class="carousel-caption carousel-caption-fundadores">
-                          <h2><b id="t1">Fernando González de Salceda Urbina</b></h2>
+                          <p><b id="t1">Fernando González de Salceda Urbina</b></p>
                           <p id="p1" >Egresado de la Universidad de la Iberoamericana en Administración de Empresas con Maestría en Finanzas en el ITAM. Con 36 años de experiencia en el sector financiero.</p>
                         </div>
                       </div>
@@ -166,7 +166,7 @@
                       <div class="carousel-item">
                         <img id="f2" class="d-block w-100" src="{{asset('img/fundadores/fundador_slider02.png')}}" alt="First slide">
                         <div class="carousel-caption carousel-caption-fundadores">
-                          <h2><b id="t2">Fernando González de Salceda Heshem</b></h2>
+                          <p><b id="t2">Fernando González de Salceda Heshem</b></p>
                           <p id="p2" >Egresado del Tecnológico de monterrey Campus Monterrey de la carrera de Ingeniería industrial con certificación en figura 3 de la Asociación Mexicana de Intermediario Bursátiles</p>
                         </div>
                       </div>
@@ -425,12 +425,13 @@
                   <label>Mensaje</label>
                 </div>
 
-  							<div class="">
-  								<button href="#" class="btn btn-success btn-aserfi">
-  									Enviar
-  								</button>
-  							</div>
+  							
   						</form>
+              <div class="">
+                  <button id="btnEmail" href="#" class="btn btn-success btn-aserfi">
+                    Enviar
+                  </button>
+                </div>
 					</div>
 					<div class="col-lg-5 margin-form-contacto">
 						<ul class="margin-contacto" >
@@ -476,7 +477,7 @@
 	<script src="{{asset('js/Page/moment/moment.js')}}"></script>
 	<script src="{{asset('js/Page/moment/moment-with-locales.js')}}"></script>
 	
-  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="{{asset('plugins/mui-0.9.41/js/mui.min.js')}}"></script>
   <script src="{{asset('plugins/aos/aos.js')}}"></script>
   <script src="{{asset('js/Dashboard/JSGenerico.js')}}"></script>

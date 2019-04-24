@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+  $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
   AOS.init({
     easing: 'ease-out-back',
     duration: 1000
@@ -62,4 +68,28 @@ $(document).ready(function () {
     $("#iframeVideo").attr("src","https://www.youtube-nocookie.com/embed/TkTDdsBGQu8?autoplay=1");
     
   });
+
+
+  $("#btnEmail").click(function() {
+    $.ajax({
+        url: 'sendMail',
+        type: 'get',
+        dataType: "json",
+        data: {
+            cNombre: $('#cNombre').val(),
+            cEmail: $('#cEmail').val(),
+            cAsunto: $('#cAsunto').val(),
+            cMensaje: $('#cMensaje').val()
+        },
+        success: function(data) {
+            console.info(data)
+            swal ( "¡Éxito!" , "Registros actualizados correctamente",  "success" );
+        },
+        error: function(e, x, settings, exception) {
+          console.info(exception)
+            failGeneric(e, x, settings, exception);
+        },
+    });
+  });
+
 });

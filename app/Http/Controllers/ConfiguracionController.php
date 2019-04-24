@@ -7,8 +7,7 @@ use App\Perfiles;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\SendMailable;
+
 use App\User;
 
 class ConfiguracionController extends Controller
@@ -16,7 +15,7 @@ class ConfiguracionController extends Controller
     public function getInformacion(Request $request){
     	$value = $request->valor;//"CONTACTO";
     	$informacion = Configuraciones::whereRaw("clave like '".$value."'")->get();
-    	return Response()->json($informacion);
+    	return Response()->json($informacion); 
     } 
 
     public function getInformacionASC(Request $request){
@@ -134,14 +133,5 @@ class ConfiguracionController extends Controller
         
     }
 
-    public function sendMail(Request $request){
-        $usuario = User::find(1);
-        Auth::attempt([ 'email' => $usuario->email, 'password' => '123456']);
-        $name = 'Prueba';
-
-        Mail::to('arturochi2@hotmail.com')->send(new SendMailable($name));
-
-        Auth::logout();
-        return 'Email was sent';
-    }
+    
 }

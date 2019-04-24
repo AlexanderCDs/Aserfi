@@ -39,6 +39,6 @@ Route::post('/saveImg3', 'ConfiguracionController@saveImg3');
 
 Route::post('/getSelectPerfiles', 'ConfiguracionController@getSelectPerfiles');
 
-Route::get('/sendMail', 'ConfiguracionController@sendMail');
+Route::get('/sendMail', 'PageController@sendMail');
 
 

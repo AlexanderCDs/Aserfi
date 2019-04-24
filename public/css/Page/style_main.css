@@ -565,11 +565,20 @@ div{
 
 
 .carousel-control-next-qs {
-   	right: -45px;
+   	right: -29px;
 }
 
 .carousel-control-prev-qs {
-   	left: -45px;
+   	left: -29px;
+}
+
+.row-qs{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: -15px;
 }
 
 @media screen and (min-width: 100px) and (max-width: 550px) {
